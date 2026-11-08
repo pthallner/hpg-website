@@ -1,0 +1,184 @@
+/* High Peaks Group — Brand Tokens
+ * ───────────────────────────────────────────────────────────
+ * Design system for an organizational development consultancy.
+ * Voice: professional with warmth — "Labrador" energy paired
+ * with the authority of a leadership advisor.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* ── Core Palette ─────────────────────────────────────── */
+  --hpg-primary-blue: #0070F3;   /* CTAs, links, innovation */
+  --hpg-deep-navy:    #1A365D;   /* Headers, authority      */
+  --hpg-sage-green:   #68A063;   /* Growth, wellness        */
+  --hpg-sage-light:   #7BB36F;   /* Sage gradient stop      */
+  --hpg-warm-white:   #FDFCFA;   /* Primary background      */
+  --hpg-charcoal:     #2D3748;   /* Body text               */
+  --hpg-coral:        #FF6B6B;   /* Accent — sparingly!     */
+  --hpg-coral-light:  #FF8E8E;   /* Coral gradient stop     */
+  --hpg-light-bg:     #F8F6F3;   /* Secondary background    */
+  --hpg-subtle-strong:#ECE7DF;   /* Stronger subtle surface */
+
+  /* ── Semantic Foreground / Background ─────────────────── */
+  --bg-primary:    var(--hpg-warm-white);
+  --bg-secondary:  var(--hpg-light-bg);
+  --bg-subtle-strong: var(--hpg-subtle-strong);
+  --bg-inverse:    var(--hpg-charcoal);
+  --bg-brand:      var(--hpg-deep-navy);
+
+  --fg-1:          var(--hpg-deep-navy);   /* strongest */
+  --fg-2:          var(--hpg-charcoal);    /* body      */
+  --fg-3:          #5A6878;                /* muted     */
+  --fg-on-dark:    var(--hpg-warm-white);
+  --fg-link:       var(--hpg-primary-blue);
+  --fg-accent:     var(--hpg-sage-green);
+  --fg-emphasis:   var(--hpg-coral);
+
+  /* ── Borders & Dividers ───────────────────────────────── */
+  --border-subtle: rgba(45, 55, 72, 0.10);
+  --border-default: rgba(45, 55, 72, 0.18);
+  --border-strong: var(--hpg-deep-navy);
+  --divider-sage:  var(--hpg-sage-green);
+  --divider-light: var(--hpg-light-bg);
+
+  /* ── Type Stack ───────────────────────────────────────── */
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ── Type Scale (semantic) ───────────────────────────── */
+  --fs-display: clamp(2.5rem, 4.5vw, 4rem);   /* 40 → 64 */
+  --fs-h1:      clamp(2rem, 3.4vw, 3rem);     /* 32 → 48 */
+  --fs-h2:      clamp(1.5rem, 2.4vw, 2.125rem); /* 24 → 34 */
+  --fs-h3:      1.375rem;                     /* 22 */
+  --fs-subtitle:1.125rem;                     /* 18 */
+  --fs-body:    1rem;                         /* 16 */
+  --fs-small:   0.875rem;                     /* 14 */
+  --fs-micro:   0.75rem;                      /* 12 */
+
+  --lh-tight:   1.15;
+  --lh-snug:    1.3;
+  --lh-normal:  1.55;
+  --lh-loose:   1.7;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-eyebrow:0.12em;
+
+  /* ── Spacing Scale (4pt) ─────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+
+  /* ── Radii ───────────────────────────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   20px;
+  --radius-pill: 999px;
+
+  /* ── Shadow / Elevation ──────────────────────────────── */
+  --shadow-xs:    0 1px 2px rgba(26, 54, 93, 0.06);
+  --shadow-sm:    0 2px 6px rgba(26, 54, 93, 0.08);
+  --shadow-md:    0 4px 14px rgba(26, 54, 93, 0.10);
+  --shadow-lg:    0 12px 32px rgba(26, 54, 93, 0.14);
+  --shadow-sage:  0 4px 15px rgba(104, 160, 99, 0.30);
+  --shadow-blue:  0 4px 15px rgba(0, 112, 243, 0.25);
+  --shadow-coral: 0 4px 15px rgba(255, 107, 107, 0.30);
+
+  /* ── Signature Gradients ─────────────────────────────── */
+  --gradient-authority:   linear-gradient(135deg, #0070F3 0%, #1A365D 100%);
+  --gradient-growth:      linear-gradient(135deg, #68A063 0%, #7BB36F 100%);
+  --gradient-coral:       linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+  --gradient-warm-subtle: linear-gradient(135deg, #FDFCFA 0%, #F8F6F3 100%);
+  --gradient-innovation:  linear-gradient(135deg, #0070F3 0%, #68A063 100%);
+
+  /* ── Motion ──────────────────────────────────────────── */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+}
+
+/* ── Base Element Styles ─────────────────────────────── */
+.hpg-root,
+body.hpg {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.hpg h1, .hpg-h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  font-weight: 800;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--hpg-deep-navy);
+  text-wrap: balance;
+}
+
+.hpg h2, .hpg-h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--hpg-deep-navy);
+}
+
+.hpg h3, .hpg-h3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  line-height: var(--lh-snug);
+  color: var(--hpg-sage-green);
+}
+
+.hpg-subtitle {
+  font-size: var(--fs-subtitle);
+  font-weight: 400;
+  line-height: var(--lh-normal);
+  color: var(--hpg-charcoal);
+}
+
+.hpg-eyebrow {
+  font-size: var(--fs-micro);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--hpg-sage-green);
+}
+
+.hpg p, .hpg-body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  color: var(--hpg-charcoal);
+  text-wrap: pretty;
+}
+
+.hpg a, .hpg-link {
+  color: var(--hpg-primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+.hpg a:hover, .hpg-link:hover { color: var(--hpg-deep-navy); }
+
+.hpg-divider {
+  height: 2px;
+  background: var(--hpg-sage-green);
+  border: 0;
+  width: 56px;
+}

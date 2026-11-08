@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------
+# Legacy Squarespace paths -> current site
+# ---------------------------------------------------------------
+/speaking          /    301
+/privacy           /    301
+/contact-us        /#contact    301
+/contact           /#contact    301
+/about             /#about      301
+/about-us          /#about      301
+/what-we-do        /#offer      301
+/customer-success  /#work       301
+/articles          /insights/   301
+/blog              /insights/   301
+/blog/*            /insights/   301
+/careers           /    301
+
+# Old booking links and the dead MailerLite subdomain path
+/book-a-call       /book        301
+/schedule          /book        301
+
+# ---------------------------------------------------------------
+# Everything else falls through to 404.html (Netlify serves it
+# automatically). The previous catch-all "/*  /  301" sent every
+# unmatched URL silently to the homepage, which hid broken links
+# and made new pages hard to debug.
+#
+# To restore the old behavior, uncomment the line below.
+# ---------------------------------------------------------------
+# /*               /    301

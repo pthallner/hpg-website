@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ==================================================================
+  HIGH PEAKS GROUP — LANDING PAGE TEMPLATE
+  ==================================================================
+
+  HOW TO MAKE A NEW LANDING PAGE
+
+  1. Duplicate this folder:  /lp/template/  ->  /lp/YOUR-SLUG/
+     The page will be live at  highpeaksgroup.com/lp/YOUR-SLUG
+     (No Netlify configuration needed. It is just a folder.)
+
+  2. Find every  [[ ]]  marker below and replace it. There are eight.
+
+  3. IMPORTANT — change the form name in TWO places:
+       <form name="lp-YOUR-SLUG" ...>
+       <input type="hidden" name="form-name" value="lp-YOUR-SLUG">
+     They must match each other, and must be unique per landing page.
+     This is how Netlify and Attio tell your campaigns apart.
+
+  4. Remove the noindex meta tag below when the page is ready to be
+     found by search engines. Leave it in for paid-traffic-only pages.
+
+  5. Deploy: drag the whole site folder onto Netlify as usual.
+  ==================================================================
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- [[1]] PAGE TITLE -->
+<title>[[HEADLINE]] | High Peaks Group</title>
+<!-- [[2]] META DESCRIPTION — one sentence, 150 characters or so -->
+<meta name="description" content="[[ONE SENTENCE DESCRIPTION]]">
+
+<!-- Remove this line when the page should be indexed by search engines -->
+<meta name="robots" content="noindex">
+
+<link rel="icon" type="image/png" href="/assets/logo-square-wordmark.png">
+<link rel="stylesheet" href="/_ds/high-peaks-group-design-system-019dfe5c-019a-79c3-832d-0a8d216db219/colors_and_type.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="High Peaks Group">
+<meta property="og:title" content="[[HEADLINE]]">
+<meta property="og:description" content="[[ONE SENTENCE DESCRIPTION]]">
+<meta property="og:image" content="https://highpeaksgroup.com/assets/og-image.jpg">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4VNXDG3PE"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N4VNXDG3PE');</script>
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',Helvetica,Arial,sans-serif;background:#FDFCFA;color:#2D3748;-webkit-font-smoothing:antialiased;}
+  .hpg-cta-primary{transition:transform 200ms cubic-bezier(0.4,0,0.2,1),box-shadow 200ms cubic-bezier(0.4,0,0.2,1);}
+  .hpg-cta-primary:hover{transform:translateY(-1px);box-shadow:0 8px 26px rgba(0,112,243,0.34);}
+  .lede{font-size:19px;line-height:1.7;color:#2D3748;margin:0 0 22px;text-wrap:pretty;}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#68A063;}
+  .rule{height:2px;width:56px;background:#68A063;margin:16px 0 24px;}
+  .bullets{margin:0 0 26px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .bullets li{font-size:18px;line-height:1.6;color:#2D3748;padding-left:24px;position:relative;}
+  .bullets li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:999px;background:#68A063;}
+  .fld{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600;color:#1A365D;}
+  .fld input,.fld select,.fld textarea{font-size:16px;font-weight:400;color:#2D3748;padding:13px 14px;border:1px solid rgba(45,55,72,0.18);border-radius:8px;background:#FDFCFA;font-family:inherit;width:100%;}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid rgba(0,112,243,0.35);outline-offset:1px;border-color:#0070F3;}
+  @media(max-width:900px){.split{grid-template-columns:1fr !important;gap:48px !important;}}
+  @media(max-width:768px){.wrap{padding-left:20px !important;padding-right:20px !important;}.two{grid-template-columns:1fr !important;}}
+</style>
+</head>
+<body>
+
+  <!-- Minimal header. Landing pages deliberately omit site navigation
+       so there is one thing to do on the page. -->
+  <header style="border-bottom:1px solid rgba(45,55,72,0.08);background:#FDFCFA;">
+    <div class="wrap" style="max-width:1100px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;">
+      <a href="/" style="display:inline-flex;align-items:center;"><img src="/assets/logo-horizontal.png" alt="High Peaks Group" style="height:32px;"></a>
+      <span style="font-size:13px;font-weight:600;color:#5A6878;">Organizational design for professional services firms</span>
+    </div>
+  </header>
+
+  <!-- ============ HERO + FORM ============ -->
+  <main>
+    <section style="background:linear-gradient(135deg,#0070F3 0%,#1A365D 100%);padding:72px 32px 88px;">
+      <div class="split wrap" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:start;">
+
+        <!-- Left: the pitch -->
+        <div>
+          <!-- [[3]] EYEBROW — where this page is coming from, e.g. "ALA Annual Conference" -->
+          <div class="eyebrow" style="color:#9FD195;">[[EYEBROW]]</div>
+          <div class="rule" style="background:#9FD195;"></div>
+
+          <!-- [[4]] HEADLINE — lead with the idea, not a setup for the idea -->
+          <h1 style="margin:0 0 20px;font-size:clamp(32px,4.6vw,50px);font-weight:800;color:#FDFCFA;letter-spacing:-0.02em;line-height:1.1;text-wrap:balance;">[[HEADLINE]]</h1>
+
+          <!-- [[5]] SUBHEAD — two or three sentences of prose -->
+          <p style="margin:0 0 30px;font-size:20px;line-height:1.6;color:rgba(253,252,250,0.90);max-width:50ch;">[[SUBHEAD: two or three sentences that say what the reader gets and why it is worth their attention.]]</p>
+
+          <!-- [[6]] THREE POINTS -->
+          <ul class="bullets">
+            <li style="color:rgba(253,252,250,0.90);">[[POINT ONE]]</li>
+            <li style="color:rgba(253,252,250,0.90);">[[POINT TWO]]</li>
+            <li style="color:rgba(253,252,250,0.90);">[[POINT THREE]]</li>
+          </ul>
+        </div>
+
+        <!-- Right: the form -->
+        <div style="background:#FDFCFA;border-radius:14px;padding:32px;box-shadow:0 20px 50px rgba(0,0,0,0.22);">
+          <!-- [[7]] FORM HEADING and BUTTON LABEL -->
+          <h2 style="margin:0 0 8px;font-size:22px;font-weight:800;color:#1A365D;letter-spacing:-0.01em;line-height:1.25;">[[FORM HEADING]]</h2>
+          <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#5A6878;">No spam. Unsubscribe whenever.</p>
+
+          <!--
+            CHANGE  lp-template  TO  lp-YOUR-SLUG  IN BOTH PLACES BELOW.
+          -->
+          <form name="lp-template" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you.html" style="display:flex;flex-direction:column;gap:16px;">
+            <input type="hidden" name="form-name" value="lp-template">
+
+            <!-- These three hidden fields drive routing inside Attio.
+                 - source:    which page the lead came from
+                 - campaign:  what you want to call this campaign in Attio
+                 - list:      the MailerLite group name to subscribe them to -->
+            <input type="hidden" name="source"   value="/lp/template">
+            <input type="hidden" name="campaign" value="[[CAMPAIGN NAME]]">
+            <input type="hidden" name="list"     value="[[MAILERLITE GROUP NAME]]">
+
+            <p style="display:none;"><label>Skip if you are human: <input name="bot-field"></label></p>
+
+            <label class="fld">Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="fld">Work email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="fld">Firm name
+              <input type="text" name="firm" autocomplete="organization" required>
+            </label>
+            <label class="fld">Your role
+              <input type="text" name="role" autocomplete="organization-title" placeholder="COO, Managing Partner, Executive Director">
+            </label>
+
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="hpg-cta-primary" style="background:#0070F3;color:#FDFCFA;padding:15px 24px;border:0;border-radius:8px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;box-shadow:0 4px 15px rgba(0,112,243,0.25);">[[BUTTON LABEL]]</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ BODY ============ -->
+    <section style="padding:80px 32px;">
+      <div class="wrap" style="max-width:720px;margin:0 auto;">
+        <div class="eyebrow">Why this matters</div>
+        <div class="rule"></div>
+        <!-- [[8]] BODY COPY — two to four short paragraphs of prose -->
+        <p class="lede">[[BODY PARAGRAPH ONE.]]</p>
+        <p class="lede">[[BODY PARAGRAPH TWO.]]</p>
+
+        <div style="border-left:3px solid #68A063;padding:4px 0 4px 24px;margin:36px 0;font-size:23px;font-weight:600;line-height:1.4;color:#1A365D;letter-spacing:-0.01em;">
+          [[PULL QUOTE, one sentence.]]
+        </div>
+
+        <p class="lede">[[BODY PARAGRAPH THREE.]]</p>
+      </div>
+    </section>
+
+    <!-- ============ CREDIBILITY ============ -->
+    <section style="background:#F8F6F3;padding:64px 32px;">
+      <div class="wrap" style="max-width:1100px;margin:0 auto;">
+        <div class="eyebrow" style="text-align:center;">Firms we've worked with</div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap;margin-top:32px;opacity:0.72;">
+          <img src="/assets/logo-grossmcginley-blue.webp" alt="Gross McGinley" style="height:38px;">
+          <img src="/assets/logo-highswartz.png" alt="High Swartz" style="height:38px;">
+          <img src="/assets/logo-jaypeak.png" alt="Jay Peak Resort" style="height:38px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLOSING CTA ============ -->
+    <section style="background:#1A365D;padding:72px 32px;text-align:center;">
+      <div class="wrap" style="max-width:640px;margin:0 auto;">
+        <h2 style="margin:0 0 16px;font-size:clamp(26px,3.4vw,36px);font-weight:800;color:#FDFCFA;letter-spacing:-0.02em;line-height:1.15;">Rather just talk it through?</h2>
+        <p style="margin:0 0 30px;font-size:18px;line-height:1.6;color:rgba(253,252,250,0.85);">Thirty minutes, no deck, no obligation.</p>
+        <a href="/book" class="hpg-cta-primary" style="display:inline-block;background:#0070F3;color:#FDFCFA;padding:16px 32px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.28);">Book an intro call →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#2D3748;color:#FDFCFA;padding:44px 32px;">
+    <div class="wrap" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <img src="/assets/logo-white-green.png" alt="High Peaks Group" style="height:30px;">
+      <span style="font-size:15px;font-weight:600;color:rgba(253,252,250,0.82);">Lead the moments that change everything.</span>
+    </div>
+    <div class="wrap" style="max-width:1100px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(253,252,250,0.10);font-size:13px;color:rgba(253,252,250,0.55);">© 2026 High Peaks Group. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
