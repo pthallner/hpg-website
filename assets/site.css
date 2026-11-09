@@ -157,8 +157,19 @@ h3 { font-size: 22px; line-height: 1.25; letter-spacing: -0.012em; }
 .actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: 40px; }
 
 /* ---------- Hero ---------- */
-.hero { background: var(--navy); color: rgba(253, 252, 250, 0.88); overflow: hidden; }
-.hero .wrap { display: grid; grid-template-columns: 6fr 6fr; gap: 24px; align-items: center; min-height: min(78vh, 720px); padding-top: 72px; padding-bottom: 88px; }
+.hero {
+  color: rgba(253, 252, 250, 0.88);
+  overflow: hidden;
+  background-color: var(--navy);
+  /* Photo sits on the right and fades into brand navy toward the text on the left */
+  background-image:
+    linear-gradient(90deg, rgba(26,54,93,1) 0%, rgba(26,54,93,0.97) 34%, rgba(26,54,93,0.72) 56%, rgba(26,54,93,0.30) 100%),
+    linear-gradient(rgba(26,54,93,0.18), rgba(26,54,93,0.18)),
+    url("/assets/hero-boardroom.jpg");
+  background-size: cover, cover, cover;
+  background-position: center, center, 70% center;
+}
+.hero .wrap { display: grid; grid-template-columns: 7fr 5fr; gap: 24px; align-items: center; min-height: min(78vh, 720px); padding-top: 72px; padding-bottom: 88px; }
 .hero h1 { color: var(--white); max-width: 11em; }
 .hero .lede { color: rgba(253, 252, 250, 0.86); margin-top: 28px; max-width: 30em; }
 .hero-photo { margin: 0 calc(-1 * ((100vw - min(100vw, var(--wrap))) / 2 + var(--gutter))) 0 0; align-self: stretch; position: relative; min-height: 440px; }
@@ -331,7 +342,8 @@ h3 { font-size: 22px; line-height: 1.25; letter-spacing: -0.012em; }
   .section.tight { padding: 56px 0; }
   .split, .two-col, .offer-lead, .offer-pair, .about-grid, .subscribe { grid-template-columns: 1fr; gap: 28px; }
   .rail { font-size: 17px; }
-  .hero .wrap { grid-template-columns: 1fr; min-height: 0; padding-top: 56px; padding-bottom: 0; gap: 40px; }
+  .hero .wrap { grid-template-columns: 1fr; min-height: 0; padding-top: 64px; padding-bottom: 72px; gap: 40px; }
+  .hero { background-image: linear-gradient(rgba(26,54,93,0.88), rgba(26,54,93,0.88)), url("/assets/hero-boardroom.jpg"); background-size: cover, cover; background-position: center, 70% center; }
   .hero-photo { min-height: 260px; margin: 0 -20px; }
   .hero-photo img { border-radius: 0; }
   .offer-lead { padding: 28px; }
