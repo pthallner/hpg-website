@@ -1,533 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>High Peaks Group | Operating-model redesign for professional services firms</title>
-<meta name="description" content="High Peaks Group advises mid-sized professional services firms on the structural work of redesigning the operating model they've outgrown, with the rigor partners bring to client work.">
-<link rel="icon" type="image/png" href="assets/logo-square-wordmark.png">
-<link rel="apple-touch-icon" href="assets/logo-square-wordmark.png">
+<title>High Peaks Group | Operating model redesign for professional services firms</title>
+<meta name="description" content="High Peaks Group advises mid-sized professional services firms on redesigning the operating model they have outgrown, with the rigor partners bring to client work.">
+<link rel="canonical" href="https://highpeaksgroup.com/">
+<link rel="icon" type="image/png" href="/assets/logo-square-wordmark.png">
+<link rel="apple-touch-icon" href="/assets/logo-square-wordmark.png">
+<link rel="preload" href="/assets/fonts/inter-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="High Peaks Group">
-<meta property="og:title" content="Redesign the operating model your firm has outgrown.">
-<meta property="og:description" content="High Peaks Group advises mid-sized professional services firms on the structural work that lets a firm run with the rigor partners bring to client work.">
+<meta property="og:title" content="High Peaks Group | Operating model redesign for professional services firms">
+<meta property="og:description" content="High Peaks Group advises mid-sized professional services firms on redesigning the operating model they have outgrown, with the rigor partners bring to client work.">
 <meta property="og:url" content="https://highpeaksgroup.com/">
 <meta property="og:image" content="https://highpeaksgroup.com/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Redesign the operating model your firm has outgrown.">
-<meta name="twitter:description" content="Structural work for mid-sized professional services firms that have outgrown the way they're built.">
-<meta name="twitter:image" content="https://highpeaksgroup.com/assets/og-image.jpg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4VNXDG3PE"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-N4VNXDG3PE');
-</script>
-<script src="./support.js"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N4VNXDG3PE');</script>
 </head>
 <body>
-<template id="__bundler_thumbnail" data-bg-color="#1A365D">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#1A365D"/>
-    <polyline points="170,560 430,290 570,430 800,190 980,400 1030,560" fill="none" stroke="#68A063" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
-    <text x="600" y="690" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="#FDFCFA" letter-spacing="3">HIGH PEAKS GROUP</text>
-  </svg>
-</template>
-<x-dc>
-<helmet>
-  <link rel="stylesheet" href="_ds/high-peaks-group-design-system-019dfe5c-019a-79c3-832d-0a8d216db219/colors_and_type.css">
-  <script src="image-slot.js"></script>
-  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
-  <style>
-    body { margin: 0; background: #FDFCFA; }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    .hpg-cta-primary { transition: transform 200ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1); }
-    .hpg-cta-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 26px rgba(0,112,243,0.34); }
-    .hpg-card { transition: transform 240ms cubic-bezier(0.4,0,0.2,1), box-shadow 240ms cubic-bezier(0.4,0,0.2,1); }
-    .hpg-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(26,54,93,0.14); }
-    .hpg-navlink { transition: color 160ms cubic-bezier(0.4,0,0.2,1); }
-    .hpg-readmore { transition: gap 180ms cubic-bezier(0.4,0,0.2,1); }
-    .hpg-readmore:hover { gap: 10px !important; }
-    .hpg-social { color: rgba(253,252,250,0.60); display: inline-flex; transition: color 160ms cubic-bezier(0.4,0,0.2,1); }
-    .hpg-social:hover { color: #68A063; }
-    .hpg-burger { display: none; background: none; border: 0; cursor: pointer; padding: 6px; align-items: center; justify-content: center; color: rgba(253,252,250,0.95); }
-    #hpg-mobile-menu { display: none; }
-    @media (max-width: 768px) {
-      .hpg-burger { display: inline-flex !important; }
-      #hpg-mobile-menu.open { display: flex !important; }
-      [style*="grid-template-columns"] { grid-template-columns: 1fr !important; gap: 20px !important; }
-      .hpg-navlink { display: none !important; }
-      [style*="padding: 18px 32px"] { padding: 14px 20px !important; }
-      [style*="padding: 0 32px"] { padding-left: 20px !important; padding-right: 20px !important; }
-      [style*="padding: 96px 32px"] { padding: 56px 20px !important; }
-      [style*="padding: 72px 32px"] { padding: 52px 20px !important; }
-      [style*="padding: 104px 32px"] { padding: 60px 20px !important; }
-      [style*="padding: 72px 32px 40px"] { padding: 48px 20px 32px !important; }
-      [style*="padding: 40px"] { padding: 26px !important; }
-      [style*="padding: 36px"] { padding: 26px !important; }
-    }
-  </style>
-</helmet>
-
-<div style="font-family: 'Inter', Helvetica, Arial, sans-serif; color: #2D3748; background: #FDFCFA; -webkit-font-smoothing: antialiased;">
-
-  <!-- ================= NAV ================= -->
-  <nav id="hpg-nav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: transparent; border-bottom: 1px solid transparent; transition: all 220ms cubic-bezier(0.4,0,0.2,1);">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between;">
-      <a href="#top" style="display: inline-flex; align-items: center;"><img id="hpg-logo-light" src="assets/logo-white-green.png" alt="High Peaks Group" style="height: 34px; display: block;"><img id="hpg-logo-dark" src="assets/logo-horizontal.png" alt="High Peaks Group" style="height: 32px; display: none;"></a>
-      <div style="display: flex; gap: 34px; align-items: center;">
-        <a href="#how-we-think" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">How we think</a>
-        <a href="#approach" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">Approach</a>
-        <a href="#offer" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">What we offer</a>
-        <a href="#work" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">Client work</a>
-        <sc-if value="{{ showInsights }}" hint-placeholder-val="{{ true }}"><a href="insights/" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">Insights</a></sc-if>
-        <a href="#about" data-navlink="" class="hpg-navlink" style="font-size: 14px; font-weight: 500; color: rgba(253,252,250,0.92); text-decoration: none;">About</a>
-        <a id="hpg-nav-cta" href="/book" style="background: #FDFCFA; color: #1A365D; padding: 11px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none;">Book an intro call</a>
-        <button id="hpg-burger" class="hpg-burger" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" style="width: 26px; height: 26px;"></i></button>
-      </div>
-    </div>
-  </nav>
-  <div id="hpg-mobile-menu" style="position: fixed; top: 0; left: 0; right: 0; z-index: 99; flex-direction: column; background: rgba(253,252,250,0.98); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(45,55,72,0.10); box-shadow: 0 16px 40px rgba(26,54,93,0.14); padding: 80px 24px 28px;">
-    <a href="#how-we-think" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">How we think</a>
-    <a href="#approach" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">Approach</a>
-    <a href="#offer" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">What we offer</a>
-    <a href="#work" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">Client work</a>
-    <a href="insights/" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">Insights</a>
-    <a href="#about" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">About</a>
-    <a href="#contact" style="font-size: 17px; font-weight: 600; color: #1A365D; text-decoration: none; padding: 15px 6px; border-bottom: 1px solid rgba(45,55,72,0.08);">Contact</a>
-    <a href="/book" style="margin-top: 18px; background: #0070F3; color: #FDFCFA; text-align: center; padding: 15px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none;">Book an intro call</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/logo-horizontal-trim.png" alt="High Peaks Group" width="160" height="40"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+    <ul id="nav-list">
+      <li><a href="/#approach">Approach</a></li>
+      <li><a href="/#offer">What we offer</a></li>
+      <li><a href="/work/">Client work</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a class="btn" href="/book">Book an intro call</a></li>
+    </ul>
   </div>
-
-  <!-- ================= HERO ================= -->
-  <header id="top" style="position: relative; height: 90vh; min-height: 660px; max-height: 880px; display: flex; align-items: center; overflow: hidden;">
-    <div style="position: absolute; inset: 0; background-image: url('assets/hero-web.jpg'); background-size: cover; background-position: center;"></div>
-    <div style="position: absolute; inset: 0; background: linear-gradient(95deg, rgba(26,54,93,0.94) 0%, rgba(26,54,93,0.80) 42%, rgba(26,54,93,0.40) 100%);"></div>
-    <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 32px;">
-      <div style="max-width: 780px;">
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #9FD195; margin-bottom: 22px;">Organizational design · Professional services firms</div>
-        <h1 style="margin: 0; font-size: clamp(40px, 5.4vw, 64px); font-weight: 800; line-height: 1.05; color: #FDFCFA; letter-spacing: -0.025em; max-width: 15ch;">Redesign the operating model your firm has outgrown.</h1>
-        <p style="margin: 28px 0 0; font-size: 19px; line-height: 1.6; color: rgba(253,252,250,0.9); max-width: 50ch;">We help mid-sized professional services firms bring the rigor of their client work to the work of running the firm.</p>
-        <div style="display: flex; gap: 14px; margin-top: 38px; flex-wrap: wrap;">
-          <a href="/book" class="hpg-cta-primary" style="background: #0070F3; color: #FDFCFA; padding: 16px 30px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.28);">Book an intro call</a>
-          <a href="#approach" style="background: rgba(253,252,250,0.10); color: #FDFCFA; padding: 16px 30px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1.5px solid rgba(253,252,250,0.4); backdrop-filter: blur(4px);">See our approach</a>
-        </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="display">Redesign the operating model your firm has outgrown.</h1>
+      <p class="lede">High Peaks Group advises mid-sized professional services firms on how they are organized, with the same rigor partners bring to client work.</p>
+      <div class="actions">
+        <a class="btn btn-on-navy" href="/book">Book an intro call</a>
+        <a class="textlink" href="#approach">How we work</a>
       </div>
     </div>
-  </header>
 
-  <!-- ================= HOW WE THINK ================= -->
-  <section id="how-we-think" style="scroll-margin-top: 76px; background: #FDFCFA; padding: 96px 32px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">How we think</div>
-      <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 28px;"></div>
-      <div style="display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 64px; align-items: start;">
-        <div>
-          <h2 style="margin: 0 0 24px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.12;">The model that built your firm may be holding it back.</h2>
-          <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.7; color: #2D3748;">When firms grow, their structural design often lags behind. The signs show up as stalled decisions, partners pulled into operational frustrations, good people leaving, or friction between practice areas. The firm responds with a technology investment, another offsite, a chief of staff, or a redesigned bonus pool, and the operating model underneath all of it stays the same.</p>
-          <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #2D3748;">The firms that move past this point treat their own organization with the rigor they apply to client work. They reassess, redesign the operating model around the firm they have become, and let the old version go.</p>
-        </div>
-        <div style="background: #FDFCFA; border: 2px solid #68A063; border-radius: 12px; padding: 34px; box-shadow: 0 4px 14px rgba(104,160,99,0.14);">
-          <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063; margin-bottom: 18px;">The core insight</div>
-          
-          <p style="margin: 0; font-size: 22px; line-height: 1.5; font-weight: 600; color: #1A365D; letter-spacing: -0.01em;">Professional services firms are expert organizations that are rarely expert at being organizations.</p><p style="margin: 18px 0 0; font-size: 16px; line-height: 1.7; color: #2D3748;">The same focus that makes them excellent at client work, and at building lasting relationships, can leave a blind spot for the business decisions that prepare a firm to grow and change.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= WHEN FIRMS CALL US ================= -->
-  <section style="background: #F8F6F3; padding: 72px 32px;">
-    <div style="max-width: 1040px; margin: 0 auto;">
-      <div style="max-width: 720px; margin-bottom: 32px;">
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">When firms call us</div>
-        <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-        <h2 style="margin: 0; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Two moments bring firms to us.</h2>
-      </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px 28px; box-shadow: 0 2px 6px rgba(26,54,93,0.06); display: flex; gap: 18px; align-items: flex-start;">
-          <div style="flex: none; width: 44px; height: 44px; border-radius: 10px; background: rgba(104,160,99,0.14); display: flex; align-items: center; justify-content: center;"><i data-lucide="trending-up" style="width: 22px; height: 22px; color: #68A063;"></i></div>
-          <div>
-            <h3 style="margin: 0 0 6px; font-size: 19px; font-weight: 700; color: #1A365D; line-height: 1.2;">Growth</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #2D3748;">You've grown in volume, complexity, or size, and the structure that got you here is showing its limits.</p>
-          </div>
-        </div>
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px 28px; box-shadow: 0 2px 6px rgba(26,54,93,0.06); display: flex; gap: 18px; align-items: flex-start;">
-          <div style="flex: none; width: 44px; height: 44px; border-radius: 10px; background: rgba(0,112,243,0.12); display: flex; align-items: center; justify-content: center;"><i data-lucide="git-merge" style="width: 22px; height: 22px; color: #0070F3;"></i></div>
-          <div>
-            <h3 style="margin: 0 0 6px; font-size: 19px; font-weight: 700; color: #1A365D; line-height: 1.2;">Friction</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #2D3748;">Your practice and operations are each capable alone, but not yet working as one firm.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= APPROACH (navy band) ================= -->
-  <section id="approach" style="scroll-margin-top: 0; background: #1A365D; padding: 96px 32px; position: relative; overflow: hidden;">
-    <svg viewBox="0 0 1440 160" preserveAspectRatio="none" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 160px; opacity: 0.10;"><polyline points="0,160 220,60 360,118 620,24 820,96 1080,40 1280,104 1440,52 1440,160" fill="none" stroke="#68A063" stroke-width="3"></polyline></svg>
-    <div style="position: relative; max-width: 1200px; margin: 0 auto;">
-      <div style="max-width: 760px; margin-bottom: 56px;">
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #9FD195;">How we work</div>
-        <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-        <h2 style="margin: 0 0 16px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #FDFCFA; letter-spacing: -0.02em; line-height: 1.14;">We apply the High Peaks Group Approach to every engagement.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(253,252,250,0.85);">Four moves that turn a structural problem into a new operating model the firm can implement.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
-        <div>
-          <div style="font-size: 44px; font-weight: 800; color: #68A063; letter-spacing: -0.02em; line-height: 1;">01</div>
-          <div style="height: 1px; background: rgba(253,252,250,0.16); margin: 20px 0;"></div>
-          <h3 style="margin: 0 0 12px; font-size: 20px; font-weight: 700; color: #FDFCFA;">Assess</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(253,252,250,0.82);">We surface what's structurally in the way: practice-operations friction, unclear decision rights, operating model strain.</p>
-        </div>
-        <div>
-          <div style="font-size: 44px; font-weight: 800; color: #68A063; letter-spacing: -0.02em; line-height: 1;">02</div>
-          <div style="height: 1px; background: rgba(253,252,250,0.16); margin: 20px 0;"></div>
-          <h3 style="margin: 0 0 12px; font-size: 20px; font-weight: 700; color: #FDFCFA;">Quantify</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(253,252,250,0.82);">We translate the drag into partnership economics: partner time absorbed, decisions that stall, unforced turnover.</p>
-        </div>
-        <div>
-          <div style="font-size: 44px; font-weight: 800; color: #68A063; letter-spacing: -0.02em; line-height: 1;">03</div>
-          <div style="height: 1px; background: rgba(253,252,250,0.16); margin: 20px 0;"></div>
-          <h3 style="margin: 0 0 12px; font-size: 20px; font-weight: 700; color: #FDFCFA;">Design</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(253,252,250,0.82);">We design the structural changes that close the gap, co-created with the people who will own them.</p>
-        </div>
-        <div>
-          <div style="font-size: 44px; font-weight: 800; color: #68A063; letter-spacing: -0.02em; line-height: 1;">04</div>
-          <div style="height: 1px; background: rgba(253,252,250,0.16); margin: 20px 0;"></div>
-          <h3 style="margin: 0 0 12px; font-size: 20px; font-weight: 700; color: #FDFCFA;">Sustain</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: rgba(253,252,250,0.82);">We build the governance that holds the new design in place: who owns what, what signals drift, what triggers a course correction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= WHO WE PARTNER WITH ================= -->
-  <section style="background: #FDFCFA; padding: 96px 32px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 64px; align-items: center;">
-        <div>
-          <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">Who we partner with</div>
-          <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-          <h2 style="margin: 0 0 20px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Mid-sized firms that have run up against their own structure.</h2>
-          <p style="margin: 0 0 28px; font-size: 18px; line-height: 1.7; color: #2D3748;">Our clients are law firms, accounting practices, architecture and engineering firms, and financial advisory practices, typically 50 to 300 people. They have either outgrown their original design or are facing a structural moment that calls for deliberate organizational thinking.</p>
-        </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-            <div style="width: 46px; height: 46px; border-radius: 12px; background: rgba(104,160,99,0.12); display: flex; align-items: center; justify-content: center;"><i data-lucide="scale" style="width: 23px; height: 23px; color: #68A063;"></i></div>
-            <div style="margin-top: 18px; font-size: 16px; font-weight: 700; color: #1A365D; letter-spacing: -0.01em;">Law firms</div>
-          </div>
-          <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-            <div style="width: 46px; height: 46px; border-radius: 12px; background: rgba(104,160,99,0.12); display: flex; align-items: center; justify-content: center;"><i data-lucide="calculator" style="width: 23px; height: 23px; color: #68A063;"></i></div>
-            <div style="margin-top: 18px; font-size: 16px; font-weight: 700; color: #1A365D; letter-spacing: -0.01em;">Accounting practices</div>
-          </div>
-          <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-            <div style="width: 46px; height: 46px; border-radius: 12px; background: rgba(104,160,99,0.12); display: flex; align-items: center; justify-content: center;"><i data-lucide="compass" style="width: 23px; height: 23px; color: #68A063;"></i></div>
-            <div style="margin-top: 18px; font-size: 16px; font-weight: 700; color: #1A365D; letter-spacing: -0.01em;">Architecture &amp; engineering</div>
-          </div>
-          <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 12px; padding: 26px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-            <div style="width: 46px; height: 46px; border-radius: 12px; background: rgba(104,160,99,0.12); display: flex; align-items: center; justify-content: center;"><i data-lucide="landmark" style="width: 23px; height: 23px; color: #68A063;"></i></div>
-            <div style="margin-top: 18px; font-size: 16px; font-weight: 700; color: #1A365D; letter-spacing: -0.01em;">Financial advisory</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= WHAT WE OFFER ================= -->
-  
-
-  <!-- ================= CLIENT WORK ================= -->
-  <section id="offer" style="scroll-margin-top: 60px; background: #F8F6F3; padding: 96px 32px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="max-width: 760px; margin-bottom: 48px;">
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">What we offer</div>
-        <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-        <h2 style="margin: 0 0 16px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">We do three things exceedingly well.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #2D3748;">Every engagement begins with the Firm Evaluation. Firms that need more can choose either Firm Architecture or Firm Alignment, depending on what the evaluation finds.</p>
-      </div>
-
-      <!-- Featured: Firm Evaluation -->
-      <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 16px; padding: 40px; box-shadow: 0 4px 14px rgba(26,54,93,0.08); display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 40px; align-items: start; margin-bottom: 28px;">
-        <div>
-          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(104,160,99,0.14); color: #4d7d49; border-radius: 999px; padding: 7px 14px; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;"><i data-lucide="flag" style="width: 14px; height: 14px;"></i> Start here · Entry diagnostic</div>
-          <h3 style="margin: 20px 0 0; font-size: 28px; font-weight: 800; color: #1A365D; letter-spacing: -0.02em;">Firm Evaluation</h3>
-          <div style="margin-top: 14px; font-size: 14px; color: #5A6878; font-weight: 600;">Six weeks · written report</div>
-        </div>
-        <div style="display: flex; flex-direction: column; justify-content: center;">
-          <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #2D3748;">A six-week structural assessment of the firm's operating model. It produces a written report the firm owns, which can stand alone or set up the delivery engagement that follows.</p>
-          <a href="services/firm-evaluation.html" class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-size: 15px; font-weight: 600; color: #0070F3; text-decoration: none;">Learn about the Firm Evaluation →</a>
-        </div>
-      </div>
-
-      <!-- OR divider -->
-      <div style="display: flex; align-items: center; gap: 18px; margin: 8px 0 28px;">
-        <div style="flex: 1; height: 1px; background: rgba(45,55,72,0.12);"></div>
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #5A6878;">Then, one of two delivery engagements</div>
-        <div style="flex: 1; height: 1px; background: rgba(45,55,72,0.12);"></div>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; padding: 36px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-          <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(0,112,243,0.10); display: flex; align-items: center; justify-content: center; margin-bottom: 22px;"><i data-lucide="building-2" style="width: 24px; height: 24px; color: #0070F3;"></i></div>
-          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063; margin-bottom: 10px;">Operating model redesign</div>
-          <h3 style="margin: 0 0 14px; font-size: 24px; font-weight: 800; color: #1A365D; letter-spacing: -0.01em;">Firm Architecture</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #2D3748;">For firms ready to rebuild their operating model. We redesign the model, map decision rights and accountability, sequence the transition, and build the governance that holds it in place.</p>
-          <a href="services/firm-architecture.html" class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font-size: 14px; font-weight: 600; color: #0070F3; text-decoration: none;">Learn more →</a>
-        </div>
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; padding: 36px; box-shadow: 0 2px 6px rgba(26,54,93,0.06);">
-          <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(104,160,99,0.14); display: flex; align-items: center; justify-content: center; margin-bottom: 22px;"><i data-lucide="users" style="width: 24px; height: 24px; color: #68A063;"></i></div>
-          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063; margin-bottom: 10px;">Whole-firm visioning</div>
-          <h3 style="margin: 0 0 14px; font-size: 24px; font-weight: 800; color: #1A365D; letter-spacing: -0.01em;">Firm Alignment</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #2D3748;">For firms whose practice and operational sides are not moving together. We surface the voices that usually go unheard, co-create the strategic priorities, and build the governance that holds the shared direction.</p>
-          <a href="services/firm-alignment.html" class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font-size: 14px; font-weight: 600; color: #0070F3; text-decoration: none;">Learn more →</a>
-        </div>
-      </div>
-    </div>
-  </section><section id="work" style="scroll-margin-top: 60px; background: #FDFCFA; padding: 96px 32px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="max-width: 920px; margin-bottom: 48px;">
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">Selected client work</div>
-        <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-        <h2 style="margin: 0; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Firms that took on the structural work.</h2>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 6px rgba(26,54,93,0.06); display: flex; flex-direction: column;">
-          <div style="height: 168px; background: #FFFFFF; border-bottom: 1px solid rgba(45,55,72,0.08); display: flex; align-items: center; justify-content: center; padding: 22px 36px;"><img src="assets/logo-grossmcginley-blue.webp" alt="Gross McGinley LLP" style="width: auto; max-width: 92%; max-height: 116px; object-fit: contain;"></div>
-          <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
-            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 12px;">Law firm · Firm Architecture</div>
-            <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; color: #1A365D;">Gross McGinley</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #2D3748;">The firm engaged High Peaks Group to redesign and modernize its administrative operating model, ensure knowledge transfer and handoffs, and map decision rights and accountability to prepare for future growth.</p>
-          </div>
-        </div>
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 6px rgba(26,54,93,0.06); display: flex; flex-direction: column;">
-          <div style="height: 168px; background: #FFFFFF; border-bottom: 1px solid rgba(45,55,72,0.08); display: flex; align-items: center; justify-content: center; padding: 28px 36px;"><img src="assets/logo-highswartz.png" alt="High Swartz Attorneys at Law" style="max-height: 100%; max-width: 86%; object-fit: contain;"></div>
-          <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
-            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 12px;">Law firm · Firm Alignment</div>
-            <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; color: #1A365D;">HighSwartz LLP</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #2D3748;">A whole-firm visioning engagement around growth, visibility, and diversity identified key strategic priorities. Leadership adopted the top recommendations, and staff and attorneys reconnected to the direction.</p>
-          </div>
-        </div>
-        <div class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 6px rgba(26,54,93,0.06); display: flex; flex-direction: column;">
-          <div style="height: 168px; background: #FFFFFF; border-bottom: 1px solid rgba(45,55,72,0.08); display: flex; align-items: center; justify-content: center; padding: 28px 36px;"><img src="assets/logo-jaypeak.png" alt="Jay Peak Resort, Vermont" style="max-height: 100%; max-width: 86%; object-fit: contain;"></div>
-          <div style="padding: 28px; display: flex; flex-direction: column; flex: 1;">
-            <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 12px;">Hospitality · Firm Alignment</div>
-            <h3 style="margin: 0 0 12px; font-size: 21px; font-weight: 800; color: #1A365D;">Jay Peak Resort</h3>
-            <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #2D3748;">The resort hired High Peaks Group to build its first business plan following acquisition by an ownership group. We developed a new operating model and resort-wide goals. Jay Peak continues to partner with us for annual planning.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= INSIGHTS ================= -->
-  <sc-if value="{{ showInsights }}" hint-placeholder-val="{{ true }}">
-  <section id="insights" style="scroll-margin-top: 60px; background: #F8F6F3; padding: 96px 32px;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 48px;">
-        <div style="max-width: 720px;">
-          <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">Insights</div>
-          <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-          <h2 style="margin: 0; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Field notes on the structural work.</h2>
-        </div>
-        <a href="insights/" class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; color: #0070F3; text-decoration: none; white-space: nowrap;">All insights →</a>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
-        <a href="insights/when-a-firm-outgrows-the-model.html" class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; padding: 32px; box-shadow: 0 2px 6px rgba(26,54,93,0.06); text-decoration: none; display: flex; flex-direction: column;">
-          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 16px;">Field note</div>
-          <h3 style="margin: 0 0 14px; font-size: 21px; font-weight: 800; color: #1A365D; line-height: 1.3;">When a firm outgrows the model that built it</h3>
-          <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.65; color: #2D3748;">The structural signs partners tend to read as personnel problems, and what they actually point to.</p>
-          <span class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: auto; font-size: 14px; font-weight: 600; color: #0070F3;">Read more →</span>
-        </a>
-        <a href="insights/decision-rights-partner-time.html" class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; padding: 32px; box-shadow: 0 2px 6px rgba(26,54,93,0.06); text-decoration: none; display: flex; flex-direction: column;">
-          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 16px;">Article</div>
-          <h3 style="margin: 0 0 14px; font-size: 21px; font-weight: 800; color: #1A365D; line-height: 1.3;">Decision rights are the quiet tax on partner time</h3>
-          <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.65; color: #2D3748;">How unclear ownership stalls the work, and what changes once you map who actually decides.</p>
-          <span class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: auto; font-size: 14px; font-weight: 600; color: #0070F3;">Read more →</span>
-        </a>
-        <a href="insights/why-technology-rarely-fixes-structure.html" class="hpg-card" style="background: #FDFCFA; border: 1px solid rgba(45,55,72,0.10); border-radius: 14px; padding: 32px; box-shadow: 0 2px 6px rgba(26,54,93,0.06); text-decoration: none; display: flex; flex-direction: column;">
-          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: #68A063; margin-bottom: 16px;">Article</div>
-          <h3 style="margin: 0 0 14px; font-size: 21px; font-weight: 800; color: #1A365D; line-height: 1.3;">Why technology rarely fixes a structural problem</h3>
-          <p style="margin: 0 0 24px; font-size: 15px; line-height: 1.65; color: #2D3748;">The new tool, the offsite, the bonus pool, and the operating model underneath that stays the same.</p>
-          <span class="hpg-readmore" style="display: inline-flex; align-items: center; gap: 6px; margin-top: auto; font-size: 14px; font-weight: 600; color: #0070F3;">Read more →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-  </sc-if>
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about" style="scroll-margin-top: 60px; background: #FDFCFA; padding: 96px 32px;">
-    <div style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: center;">
-      <div style="position: relative;">
-        <img src="assets/paul-web.jpg" alt="Paul Thallner, Founder and Principal Consultant" style="width: 100%; border-radius: 16px; box-shadow: 0 12px 32px rgba(26,54,93,0.16); display: block;">
-        <div style="position: absolute; left: -12px; bottom: -12px; height: 60px; width: 60px; border-left: 3px solid #68A063; border-bottom: 3px solid #68A063;"></div>
-      </div>
+<section class="section" id="how-we-think">
+  <div class="wrap split">
+    <div class="rail">How we think</div>
+    <div class="body">
+      <h2>The model that built your firm may be holding it back.</h2>
+      <div class="think">
       <div>
-        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">Who you'll work with</div>
-        <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-        <h2 style="margin: 0 0 20px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Decades of serious organizational work, applied to your firm.</h2>
-        <p style="margin: 0 0 20px; font-size: 18px; line-height: 1.7; color: #2D3748;">High Peaks Group is led by Paul Thallner. He was Principal at Daggerwing Group, where he led large transformation engagements for Takeda, AT&amp;T, and MasterCard, and a Partner at Great Place to Work, with earlier years at the Teleos Leadership Institute.</p>
-        <p style="margin: 0 0 28px; font-size: 18px; line-height: 1.7; color: #2D3748;">He holds a Master of Science in Leadership and Organizational Change from Case Western Reserve, where he trained under Richard Boyatzis, and is certified in a range of frameworks and methodologies. When a firm brings him in, it gets that experience applied directly to the structure of the practice in front of him.</p>
+        <p>As firms grow, their structure tends to lag behind them. The signs are stalled decisions, partners pulled into operational problems, good people leaving, and friction between practice areas. The usual responses are a technology investment, another offsite, a chief of staff, or a new bonus pool, and the operating model underneath stays the same.</p>
+        <p>The firms that move past this point treat their own organization with the rigor they apply to client work. They take stock of what is working and what is straining, redesign the operating model around the firm they have become, and let the old version go.</p>
+      </div>
+      <div class="card insight-card">
+        <p class="big">Professional services firms are expert organizations that are rarely expert at being organizations.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section band-paper" id="who">
+  <div class="wrap split">
+    <div class="rail">Who we work with</div>
+    <div class="body">
+      <h2>Mid-sized firms that have run up against their own structure.</h2>
+      <p class="measure">Our clients are law firms, accounting practices, architecture and engineering firms, and financial advisory practices of roughly 50 to 300 people, and they usually call us in one of two situations.</p>
+      <div class="two-col cards">
+        <div class="card">
+          <h3>Growth</h3>
+          <p>The firm is bigger and more complex than the structure it was built on. Decisions that used to happen in a hallway now wait for weeks.</p>
+        </div>
+        <div class="card">
+          <h3>Friction</h3>
+          <p>The practice side and the operational side are each capable, and they are pulling in different directions.</p>
+        </div>
+      </div>
+      <p class="small muted" style="margin-top:40px;max-width:40em">The first call usually comes from a COO, director of operations, or executive director, the person who sees the structure most clearly. The decision to go ahead belongs to the managing partner, and often the partnership.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section band-navy" id="approach">
+  <div class="wrap">
+    <div class="split">
+      <div class="rail">How we work</div>
+      <div class="body">
+        <h2>The High Peaks Group Approach</h2>
+        <p class="measure" style="color:rgba(253,252,250,0.86)">Every engagement follows the same four steps.</p>
+      </div>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>Assess</h3>
+        <p>We look at how the firm runs today: where decisions stall, where practice and operations pull apart, and which structures and habits are carrying the firm and should be kept.</p>
+      </li>
+      <li class="key">
+        <h3>Quantify</h3>
+        <p>We put the strain in partnership terms: partner hours spent on operations, decisions that wait, turnover the firm did not choose. The number describes what the firm could be reaching.</p>
+        <a class="textlink" href="/quantify/">How we quantify</a>
+      </li>
+      <li>
+        <h3>Design</h3>
+        <p>We design the structural changes with the people who will own them: the operating model, decision rights, accountability, and the order of the transition.</p>
+      </li>
+      <li>
+        <h3>Sustain</h3>
+        <p>We set up the governance that keeps the design in place: who owns what, which signals show drift, and what prompts a correction.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section band-paper" id="offer">
+  <div class="wrap split">
+    <div class="rail">What we offer</div>
+    <div class="body">
+      <h2>Every engagement starts with the Firm Evaluation.</h2>
+      <div class="offer-lead">
         <div>
-          <div style="font-size: 18px; font-weight: 800; color: #1A365D; letter-spacing: -0.01em;">Paul Thallner</div>
-          <div style="font-size: 15px; color: #5A6878; margin-top: 2px;">Founder &amp; Principal Consultant</div>
+          <h3>Firm Evaluation</h3>
+          <ul class="terms">
+            <li>Six weeks</li>
+            <li>$15,000, fixed fee</li>
+            <li>A written report your firm owns</li>
+          </ul>
+        </div>
+        <div>
+          <p>The Evaluation is a structural assessment of the firm that runs through all four steps of the Approach. The report stands on its own. When the findings call for more, it recommends one of the two engagements below.</p>
+          <a class="textlink" href="/services/firm-evaluation.html">About the Firm Evaluation</a>
+        </div>
+      </div>
+      <div class="offer-next">
+        <p>When the firm is ready to act on the findings, the work continues in one of two engagements, each scoped from what the Evaluation found.</p>
+        <div class="offer-pair cards">
+          <div class="card">
+            <h3>Firm Architecture</h3>
+            <div class="kind">Operating model redesign</div>
+            <p>Firm Architecture is for firms ready to rebuild the operating model. We redesign it, map decision rights and accountability, sequence the transition, and build the governance that holds it.</p>
+            <a class="textlink" href="/services/firm-architecture.html">About Firm Architecture</a>
+          </div>
+          <div class="card">
+            <h3>Firm Alignment</h3>
+            <div class="kind">Whole-firm visioning</div>
+            <p>Firm Alignment is for firms whose practice and operational sides need a shared direction. We bring in the voices that usually go unheard, set strategic priorities together, and build the governance that keeps the direction steady.</p>
+            <a class="textlink" href="/services/firm-alignment.html">About Firm Alignment</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= CTA ================= -->
-  <section style="background: #1A365D; padding: 104px 32px; position: relative; overflow: hidden;">
-    
-    <div style="position: relative; max-width: 760px; margin: 0 auto; text-align: center;">
-      <div style="font-size: 19px; font-weight: 600; color: #9FD195; letter-spacing: -0.01em; margin-bottom: 16px;">Start the Conversation</div>
-      <h2 style="margin: 0 0 22px; font-size: clamp(30px, 3.8vw, 46px); font-weight: 800; color: #FDFCFA; letter-spacing: -0.02em; line-height: 1.12;">Let's talk through what you're seeing.</h2>
-      <p style="margin: 0 auto 36px; font-size: 19px; line-height: 1.65; color: rgba(253,252,250,0.88); max-width: 56ch;">We will listen, name the structural picture as we hear it, and tell you whether the High Peaks Group Approach is the right fit for your firm.</p>
-      <div style="display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap;">
-        <a href="/book" class="hpg-cta-primary" style="background: #0070F3; color: #FDFCFA; padding: 16px 32px; border-radius: 8px; font-weight: 600; font-size: 16px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.28);">Book an intro call →</a>
+<section class="section" id="work">
+  <div class="wrap split">
+    <div class="rail">Client work</div>
+    <div class="body">
+      <h2>Firms that took on the structural work.</h2>
+      <div class="client-cards">
+  <div class="card client-card">
+    <div class="logo"><img src="/assets/logo-grossmcginley-blue.webp" alt="Gross McGinley LLP"></div>
+    <h3>Gross McGinley</h3>
+    <div class="kind">Law firm, Firm Architecture</div>
+    <p>Gross McGinley engaged High Peaks Group to redesign its administrative operating model after the retirement of a long-serving administrator. The work covers knowledge transfer and handoffs, and a map of decision rights and accountability built for the firm's next stage of growth.</p>
+  </div>
+  <div class="card client-card">
+    <div class="logo"><img src="/assets/logo-highswartz.png" alt="High Swartz Attorneys at Law"></div>
+    <h3>HighSwartz LLP</h3>
+    <div class="kind">Law firm, Firm Alignment</div>
+    <p>HighSwartz brought the whole firm together to set a direction on growth, visibility, and diversity. Attorneys and staff set start, stop, and accelerate priorities together, and the partners adopted the top recommendations from the wider group.</p>
+  </div>
+  <div class="card client-card">
+    <div class="logo"><img src="/assets/logo-jaypeak.png" alt="Jay Peak Resort, Vermont"></div>
+    <h3>Jay Peak Resort</h3>
+    <div class="kind">Hospitality, Firm Alignment</div>
+    <p>We built Jay Peak's first strategic plan for its new ownership group, with a new operating model and resort-wide goals. The leadership team went on to exceed its targets for labor-to-sales ratio, gross revenue, and guest satisfaction. Jay Peak still works with High Peaks Group on annual planning.</p>
+  </div>
       </div>
-    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="position: absolute; top: 155px; width: 1202px; height: 285px; opacity: 0.10; left: -235px"><polyline points="0,200 200,90 360,150 560,40 760,120 960,30 1440,140" fill="none" stroke="#68A063" stroke-width="3" style="width: 759px; height: 233px"></polyline></svg></div>
-  </section>
+      <p style="margin-top:28px"><a class="textlink" href="/work/">More on the client work</a></p>
+    </div>
+  </div>
+</section>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" style="scroll-margin-top: 60px; background: #F8F6F3; padding: 96px 32px;">
-    <div style="max-width: 720px; margin: 0 auto;">
-      <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #68A063;">Prefer to write first?</div>
-      <div style="height: 2px; width: 56px; background: #68A063; margin: 16px 0 24px;"></div>
-      <h2 style="margin: 0 0 14px; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; color: #1A365D; letter-spacing: -0.02em; line-height: 1.14;">Tell us what's feeling stuck.</h2>
-      <p style="margin: 0 0 32px; font-size: 18px; line-height: 1.65; color: #2D3748;">Send a short note and we'll reply within a couple of business days. No obligation, and no deck.</p>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you.html" style="display: flex; flex-direction: column; gap: 18px;">
+<section class="section band-navy" id="contact">
+  <div class="wrap closing">
+    <div>
+      <div class="rail">Start a conversation</div>
+      <h2>Talk with us about your firm.</h2>
+      <p class="lede" style="color:rgba(253,252,250,0.86);margin-top:20px">An intro call takes thirty minutes. We will listen to what is happening at your firm, describe the structural picture as we hear it, and tell you whether the High Peaks Group Approach fits.</p>
+      <div class="actions"><a class="btn btn-on-navy" href="/book">Book an intro call</a></div>
+    </div>
+    <div class="card">
+      <h3>Prefer to write first?</h3>
+      <p class="small" style="margin-top:8px">Send a short note and we will reply within a couple of business days.</p>
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="/thank-you.html" style="margin-top:20px">
         <input type="hidden" name="form-name" value="contact">
         <input type="hidden" name="source" value="/ (homepage contact section)">
-        <p style="display: none;"><label>Skip if you are human: <input name="bot-field"></label></p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
-          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #1A365D;">Name
-            <input type="text" name="name" required style="font-size: 16px; font-weight: 400; color: #2D3748; padding: 13px 14px; border: 1px solid rgba(45,55,72,0.18); border-radius: 8px; background: #FDFCFA; font-family: inherit;">
-          </label>
-          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #1A365D;">Email
-            <input type="email" name="email" required style="font-size: 16px; font-weight: 400; color: #2D3748; padding: 13px 14px; border: 1px solid rgba(45,55,72,0.18); border-radius: 8px; background: #FDFCFA; font-family: inherit;">
-          </label>
+        <p class="hidden"><label>Skip if you are human <input name="bot-field"></label></p>
+        <div class="row">
+          <label>Name <input type="text" name="name" autocomplete="name" required></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required></label>
         </div>
-        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #1A365D;">Firm name
-          <input type="text" name="firm" style="font-size: 16px; font-weight: 400; color: #2D3748; padding: 13px 14px; border: 1px solid rgba(45,55,72,0.18); border-radius: 8px; background: #FDFCFA; font-family: inherit;">
-        </label>
-        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 600; color: #1A365D;">What's going on
-          <textarea name="message" rows="5" required style="font-size: 16px; font-weight: 400; color: #2D3748; padding: 13px 14px; border: 1px solid rgba(45,55,72,0.18); border-radius: 8px; background: #FDFCFA; font-family: inherit; resize: vertical;"></textarea>
-        </label>
+        <label>Firm name <input type="text" name="firm" autocomplete="organization"></label>
+        <label>What is going on <textarea name="message" rows="4" required></textarea></label>
         <div data-netlify-recaptcha="true"></div>
-        <button type="submit" class="hpg-cta-primary" style="align-self: flex-start; background: #0070F3; color: #FDFCFA; padding: 15px 30px; border: 0; border-radius: 8px; font-size: 15px; font-weight: 600; font-family: inherit; cursor: pointer; box-shadow: 0 4px 15px rgba(0,112,243,0.25);">Send it over</button>
+        <button class="btn" type="submit">Send note</button>
       </form>
     </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer style="background: #2D3748; color: #FDFCFA; padding: 72px 32px 40px;">
-    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 48px;">
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid">
       <div>
-        <img src="assets/logo-white-green.png" alt="High Peaks Group" style="height: 36px; margin-bottom: 18px;">
-        <p style="margin: 0 0 16px; font-size: 20px; line-height: 1.3; font-weight: 700; color: #FDFCFA; letter-spacing: -0.01em; max-width: 380px;">Lead the moments that change everything.</p>
-        <p style="margin: 0; font-size: 15px; line-height: 1.7; color: rgba(253,252,250,0.82); max-width: 380px;">We advise mid-sized professional services firms on the structural work that lets a firm perform as one organization.</p>
+        <img src="/assets/logo-white-green-trim.png" alt="High Peaks Group" width="160" height="40">
+        <p class="tag">Lead the moments that change everything.</p>
+        <p>High Peaks Group advises mid-sized professional services firms on the structural work that lets a firm perform as one organization.</p>
       </div>
       <div>
-        <h5 style="color: #68A063; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 18px;">Explore</h5>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
-          <li><a href="#how-we-think" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">How we think</a></li>
-          <li><a href="#approach" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">Approach</a></li>
-          <li><a href="#offer" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">What we offer</a></li>
-          <li><a href="#work" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">Client work</a></li>
-          <sc-if value="{{ showInsights }}" hint-placeholder-val="{{ true }}"><li><a href="insights/" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">Insights</a></li></sc-if>
-          <li><a href="#about" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">About</a></li>
+        <h4>The firm</h4>
+        <ul>
+          <li><a href="/#approach">Approach</a></li>
+          <li><a href="/quantify/">How we quantify</a></li>
+          <li><a href="/work/">Client work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/insights/">Insights</a></li>
         </ul>
       </div>
       <div>
-        <h5 style="color: #68A063; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 18px;">Contact</h5>
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
-          <li><a href="/book" style="color: rgba(253,252,250,0.82); font-size: 14px; text-decoration: none;">Book an intro call</a></li>
-          <li style="margin-top: 6px;"><div style="display: flex; gap: 16px; align-items: center;">
-            <a href="https://www.facebook.com/highpeaksgroup" target="_blank" rel="noopener" aria-label="Facebook" class="hpg-social"><i data-lucide="facebook" style="width: 20px; height: 20px;"></i></a>
-            <a href="https://www.instagram.com/highpeaksgroup" target="_blank" rel="noopener" aria-label="Instagram" class="hpg-social"><i data-lucide="instagram" style="width: 20px; height: 20px;"></i></a>
-            <a href="https://www.linkedin.com/company/highpeaksgroup" target="_blank" rel="noopener" aria-label="LinkedIn" class="hpg-social"><i data-lucide="linkedin" style="width: 20px; height: 20px;"></i></a>
-          </div></li>
+        <h4>Engagements</h4>
+        <ul>
+          <li><a href="/services/firm-evaluation.html">Firm Evaluation</a></li>
+          <li><a href="/services/firm-architecture.html">Firm Architecture</a></li>
+          <li><a href="/services/firm-alignment.html">Firm Alignment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="/book">Book an intro call</a></li>
+          <li><a href="/insights/#subscribe">Subscribe to High Peaks Insights</a></li>
+          <li><a href="https://www.linkedin.com/company/highpeaksgroup" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/highpeaksgroup" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/highpeaksgroup" rel="noopener">Instagram</a></li>
         </ul>
       </div>
     </div>
-    <div style="max-width: 1200px; margin: 56px auto 0; padding-top: 24px; border-top: 1px solid rgba(253,252,250,0.10); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 13px; color: rgba(253,252,250,0.55);">
-      <span>© 2026 High Peaks Group. All rights reserved.</span>
+    <div class="base">
+      <span>&copy; 2026 High Peaks Group. All rights reserved.</span>
       <span>highpeaksgroup.com</span>
     </div>
-  </footer>
-
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{
-  &quot;showInsights&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot; }
-}">
-class Component extends DCLogic {
-  componentDidMount() {
-    const initIcons = (tries) => {
-      if (window.lucide && window.lucide.createIcons) { window.lucide.createIcons(); }
-      else if ((tries || 0) < 80) { setTimeout(() => initIcons((tries || 0) + 1), 50); }
-    };
-    initIcons(0);
-    const nav = document.getElementById('hpg-nav');
-    const logoLight = document.getElementById('hpg-logo-light');
-    const logoDark = document.getElementById('hpg-logo-dark');
-    const cta = document.getElementById('hpg-nav-cta');
-    const burger = document.getElementById('hpg-burger');
-    const links = Array.from(document.querySelectorAll('[data-navlink]'));
-    const apply = () => {
-      const solid = window.scrollY > 24;
-      if (!nav) return;
-      if (solid) {
-        nav.style.background = 'rgba(253,252,250,0.92)';
-        nav.style.backdropFilter = 'blur(14px)';
-        nav.style.webkitBackdropFilter = 'blur(14px)';
-        nav.style.borderBottom = '1px solid rgba(45,55,72,0.08)';
-        nav.style.boxShadow = '0 2px 6px rgba(26,54,93,0.06)';
-        if (logoLight) logoLight.style.display = 'none';
-        if (logoDark) logoDark.style.display = 'block';
-        links.forEach(l => l.style.color = '#2D3748');
-        if (cta) { cta.style.background = '#0070F3'; cta.style.color = '#FDFCFA'; cta.style.boxShadow = '0 4px 15px rgba(0,112,243,0.25)'; }
-        if (burger) burger.style.color = '#2D3748';
-      } else {
-        nav.style.background = 'transparent';
-        nav.style.backdropFilter = 'none';
-        nav.style.webkitBackdropFilter = 'none';
-        nav.style.borderBottom = '1px solid transparent';
-        nav.style.boxShadow = 'none';
-        if (logoLight) logoLight.style.display = 'block';
-        if (logoDark) logoDark.style.display = 'none';
-        links.forEach(l => l.style.color = 'rgba(253,252,250,0.92)');
-        if (cta) { cta.style.background = '#FDFCFA'; cta.style.color = '#1A365D'; cta.style.boxShadow = 'none'; }
-        if (burger) burger.style.color = 'rgba(253,252,250,0.95)';
-      }
-    };
-    this._onScroll = apply;
-    window.addEventListener('scroll', apply, { passive: true });
-    apply();
-    const menu = document.getElementById('hpg-mobile-menu');
-    if (burger && menu) {
-      burger.addEventListener('click', () => {
-        const open = menu.classList.toggle('open');
-        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        menu.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-      }));
-    }
-  }
-  componentWillUnmount() {
-    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
-  }
-  renderVals() {
-    return {
-      showInsights: this.props.showInsights ?? true,
-    };
-  }
-}
-</script>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
