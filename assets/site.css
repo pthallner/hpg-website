@@ -167,7 +167,9 @@ h3 { font-size: 22px; line-height: 1.25; letter-spacing: -0.012em; }
     linear-gradient(rgba(26,54,93,0.18), rgba(26,54,93,0.18)),
     url("/assets/hero-boardroom.jpg");
   background-size: cover, cover, cover;
-  background-position: center, center, 70% center;
+  background-repeat: no-repeat;
+  /* Photo slid right so the man at the head of the table clears the headline */
+  background-position: center, center, 14vw center;
 }
 .hero .wrap { display: grid; grid-template-columns: 7fr 5fr; gap: 24px; align-items: center; min-height: min(78vh, 720px); padding-top: 72px; padding-bottom: 88px; }
 .hero h1 { color: var(--white); max-width: 11em; }
