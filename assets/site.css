@@ -162,7 +162,7 @@ h3 { font-size: 22px; line-height: 1.25; letter-spacing: -0.012em; }
 .hero h1 { color: var(--white); max-width: 11em; }
 .hero .lede { color: rgba(253, 252, 250, 0.86); margin-top: 28px; max-width: 30em; }
 .hero-photo { margin: 0 calc(-1 * ((100vw - min(100vw, var(--wrap))) / 2 + var(--gutter))) 0 0; align-self: stretch; position: relative; min-height: 440px; }
-.hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% center; border-radius: 6px 0 0 6px; }
+.hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% center; border-radius: 6px 0 0 6px; }
 
 /* The structure drawing: lines draw once on load */
 .s-old { stroke: rgba(253, 252, 250, 0.55); stroke-width: 1.5; fill: none; }
