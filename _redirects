@@ -1,14 +1,15 @@
 # ---------------------------------------------------------------
 # Legacy Squarespace paths -> current site
 # ---------------------------------------------------------------
-/speaking          /    301
+/speaking          /about/    301
 /privacy           /    301
 /contact-us        /#contact    301
 /contact           /#contact    301
-/about             /#about      301
-/about-us          /#about      301
+/client-work       /work/       301
+/how-we-quantify   /quantify/   301
+/about-us          /about/      301
 /what-we-do        /#offer      301
-/customer-success  /#work       301
+/customer-success  /work/       301
 /articles          /insights/   301
 /blog              /insights/   301
 /blog/*            /insights/   301
