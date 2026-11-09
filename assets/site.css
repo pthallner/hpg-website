@@ -376,7 +376,7 @@ h3 { font-size: 22px; line-height: 1.25; letter-spacing: -0.012em; }
     linear-gradient(90deg, rgba(26,54,93,1) 0%, rgba(26,54,93,0.97) 38%, rgba(26,54,93,0.72) 60%, rgba(26,54,93,0.32) 100%),
     linear-gradient(rgba(26,54,93,0.18), rgba(26,54,93,0.18)),
     var(--photo);
-  background-size: cover, cover, cover;
+  background-size: cover, cover, var(--photo-size, cover);
   background-repeat: no-repeat;
   background-position: center, center, var(--photo-pos, right center);
   padding-bottom: 64px;
