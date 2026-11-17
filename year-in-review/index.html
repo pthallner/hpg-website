@@ -344,9 +344,10 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
       <div class="stack">
         <span class="eyebrow">Why look back</span>
         
-        <h2>In 2026, the strain stayed inside the firm.</h2>
-        <p>Our analysis of this year's labor and industry research points to one pattern. For most of 2026, people stayed where they were. Quits hovered near 2 percent and hiring slowed, so pressure that once left as turnover stayed in the building. It showed up in decisions that waited, in partners pulled into operational questions, and in a few people carrying more than their roles.</p>
-        <p>Year-end reviews usually focus on the numbers. Revenue, realization, and utilization each get their hour. The structure that produced those numbers seldom gets one. This review gives it five minutes, from your seat at the leadership table.</p>
+        <h2>2026 asked a lot of how firms are built.</h2>
+        <p>High Peaks Group has tracked the research on professional services firms since July, and this year the pressure came from several directions at once. AI moved into daily work faster than many firms' plans for it. Mergers reshaped the competition, and for some firms raised questions about their own future. More senior people moved toward retirement while fewer new people came into the professions. Midsize firms grew their rates more slowly than the largest firms, and routine work kept eating into margins.</p>
+        <p>Each of these forces tests the same thing: how a firm makes decisions, divides its work, and spends partner time. A firm can meet every one of them well and still find its structure was built for an earlier version of itself.</p>
+        <p>Year-end reviews often look at the numbers: revenue, realization, and utilization. The structure that produced those numbers is rarely evaluated. This review gives you a way to see that structure clearly and to put a number on what it is costing your firm in partner time.</p>
       </div>
       <aside class="stats" aria-roledescription="carousel" aria-label="One finding from each sector">
         <span class="eyebrow">Across firms this year</span>
@@ -742,8 +743,7 @@ function renderResults(){
   h+='<div class="rhead"><div><img src="'+LOGO+'" alt="High Peaks Group"><span class="eyebrow" style="color:#A9D4A5">'+YEAR+' year-end review</span><h1>How your firm\'s structure carried '+YEAR+'</h1></div><div class="who"><b>'+esc(L.name)+'</b>'+esc(L.org)+'<br>'+today+'</div></div>';
   /* 1 */
   h+='<div class="panel"><span class="eyebrow">Your year at a glance</span><div class="pattern"><div class="stack" style="gap:12px"><h2>'+(pat.k==="momentum"?"Your structure carried the year.":pat.k==="growth"?"Growth is pressing on your structure.":pat.k==="friction"?"Your answers point to friction between practice and operations.":"Growth and friction are arriving together.")+'</h2><p>'+READ[pat.k]+'</p></div>'+
-     '<div class="patmap" aria-label="Pattern">'+["momentum","growth","friction","both"].map(function(k){return '<div class="pm'+(k===pat.k?' on':'')+'"><i></i>'+PATNAME[k]+'</div>';}).join("")+'</div></div>'+
-     ctx({text:"With quits near 2 percent for most of the year, few people left their firms, so structural strain stayed inside them.",src:"jolts"})+'</div>';
+     '<div class="patmap" aria-label="Pattern">'+["momentum","growth","friction","both"].map(function(k){return '<div class="pm'+(k===pat.k?' on':'')+'"><i></i>'+PATNAME[k]+'</div>';}).join("")+'</div></div>'+'</div>';
   /* 2 */
   h+='<div class="panel"><span class="eyebrow">The five areas</span>'+
      '<div class="scale" aria-hidden="true"><span></span><div class="ends"><span>Built for an earlier firm</span><span>Built for where you\'re headed</span></div><span></span></div>'+
