@@ -209,6 +209,14 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
 .question .q{font-size:clamp(1.25rem,2.4vw,1.6rem);font-weight:700;color:#fff;line-height:1.3;letter-spacing:-.01em;margin:10px 0 14px}
 .question .eyebrow{color:#A9D4A5}
 .question p{font-size:15px;line-height:1.65}
+.moneyblock{display:flex;flex-direction:column;gap:10px;padding-bottom:22px;border-bottom:1px solid var(--border)}
+.moneyblock .lbl,.area .lbl{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.moneyblock .money{font-size:clamp(2rem,4.4vw,2.9rem)}
+.moneyblock>p{font-size:15px;line-height:1.6}
+.readout{display:flex;flex-direction:column;gap:8px}.readout h2{font-size:1.35rem}.readout p{font-size:15px;line-height:1.65}
+.area .hd .lbl{flex-basis:100%}
+.others{border-top:1px solid var(--border);padding-top:14px;display:flex;flex-direction:column;gap:8px}.others p{font-size:14.5px;line-height:1.6}.others b{color:var(--navy)}
+.closers{gap:14px}.closers .how p{font-size:14.5px}.closers .how b{color:var(--navy)}
 .brief .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
 .brief .tile{background:var(--light);border-radius:12px;padding:18px 20px;border-top:4px solid var(--navy);display:flex;flex-direction:column;gap:6px}
 .brief .tile.strong{border-top-color:var(--sage)}.brief .tile.start{border-top-color:var(--blue)}
@@ -278,7 +286,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
   .panel h2{font-size:1.1rem}
   .eyebrow{font-size:11px}.eyebrow::after{margin-top:6px;width:36px}
   .rhead{padding:14px 20px}.rhead img{height:26px;margin-bottom:8px}.rhead h1{font-size:1.4rem}
-  .area{padding:8px 0;break-inside:avoid}.area p{font-size:12px;line-height:1.5}
+  .area{padding:8px 0}.area p{font-size:12px;line-height:1.5}
   .ctx{font-size:11px;padding-top:6px}
   .pattern{grid-template-columns:1fr 200px}
   .pm{padding:6px 10px;font-size:12px}
@@ -286,7 +294,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
   .scale{grid-template-columns:170px 1fr 110px!important}.scale>span{display:block!important}
   .question{grid-template-columns:1fr;padding:16px 20px;break-inside:avoid}.question .btn{display:none}
   .question .printurl{display:block!important;color:#fff;font-weight:600}
-  .help .lead{font-size:13px}.brief .next .btn{display:none}.help-cta .btn{display:none}.help-cta .printurl{display:block!important;font-weight:700;color:var(--navy)}
+  .brief .tile{padding:10px 14px;gap:2px}.brief .tile b{font-size:1rem}.brief .tile p{font-size:11.5px}.brief .next p{font-size:12px}.legend{gap:2px 14px;font-size:11px}.calc{font-size:10.5px;padding:6px 10px}.area h3{font-size:1rem}.area .hd{gap:6px 10px}.ahead{gap:6px}.ahead .it b{font-size:13px}.ahead .it p{font-size:11.5px;line-height:1.45}.others{gap:4px;padding-top:8px}.track-row{padding:3px 0}  .brief .next,.brief .tile p{display:none!important}.brief .tile{padding:8px 12px}.legend{font-size:10px}.stackbar{height:12px}.moneyblock .money{font-size:1.7rem!important}.scale{margin-bottom:0}  .closers .eyebrow::after{display:none}.closers .eyebrow{font-size:10px}.closers .how{padding:8px 12px!important}.closers .how p{line-height:1.45}.area{padding:6px 0!important}.readout{gap:4px}.readout p{font-size:11.5px!important}.ahead .it{padding:0 0 0 12px}.panel .eyebrow::after{margin-top:4px}.report .wrap>*{margin-bottom:8px!important}.srcs,.srcs ol{gap:0!important}.srcs{line-height:1.4}.rhead{padding:12px 18px!important}.rhead img{margin-bottom:4px!important}.moneyblock{gap:4px!important}.calc{margin:0}.ahead{display:grid!important;grid-template-columns:1fr 1fr;gap:8px 16px!important}.area p{font-size:11.5px!important;line-height:1.45!important}.others p{font-size:11.5px!important}.area .hd{break-after:avoid;break-inside:avoid}.area p{orphans:3;widows:3}.chip{padding:2px 10px!important;font-size:11px!important}.track-row{padding:1px 0!important;gap:10px!important}.scale{padding-bottom:0!important}.srcs{font-size:8.5px!important}.ahead .it b{font-size:12.5px!important;line-height:1.3}.ahead .it p{font-size:11px!important}  .help .lead{font-size:12px;line-height:1.5}.help h2{font-size:1.05rem}.help{gap:8px}.closers .how{padding:10px 14px;gap:4px}.area{gap:4px}.area .ctx{font-size:10.5px}.moneyblock .money{font-size:1.9rem}.moneyblock>p,.readout p,.others p{font-size:12px;line-height:1.5}.readout h2{font-size:1.1rem}.brief{gap:12px}.moneyblock{padding-bottom:12px;gap:6px}.closers{grid-template-columns:1fr 1fr!important}.closers .how p{font-size:11px}.brief .next .btn{display:none}.help-cta .btn{display:none}.help-cta .printurl{display:block!important;font-weight:700;color:var(--navy)}
   .path{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px}.path li{padding:10px 12px;break-inside:avoid}.path p,.how p{font-size:11px}.path b{font-size:12.5px}.help{break-inside:avoid}
   .question .q{font-size:1.15rem;margin:6px 0 8px}
   .question p,.ahead .it p{font-size:12px}
@@ -331,7 +339,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
         <span class="free-pill" id="free-pill" hidden>Free tool</span>
         <span class="eyebrow">A year-end review for firm leaders</span>
         <h1>How Much Billable Time Did Your Firm's Structure Cost in 2026?</h1>
-        <p class="lede">A five-minute year-end review of how your firm's structure carried the year, and a clear place to start in 2027.</p>
+        <p class="lede">This five-minute review shows how your firm's structure handled 2026 and where to start in 2027.</p>
         <p class="for">For managing partners, practice leaders, and operations leaders at firms of 50 to 300 people.</p>
         <ul class="facts"><li>About 5 minutes</li><li>Results right away</li><li>A report for your next leadership meeting</li></ul>
       </div>
@@ -354,7 +362,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
       <div class="stack">
         <span class="eyebrow">Why look back</span>
         
-        <h2>2026 asked a lot of how firms are built.</h2>
+        <h2>2026 tested how firms are built.</h2>
         <p>High Peaks Group has tracked the research on professional services firms since July, and this year the pressure came from several directions at once. AI moved into daily work faster than many firms' plans for it. Mergers reshaped the competition, and for some firms raised questions about their own future. More senior people moved toward retirement while fewer new people came into the professions. Midsize firms grew their rates more slowly than the largest firms, and routine work kept eating into margins.</p>
         <p>Each of these forces affects how a firm makes decisions, divides its work, and spends partner time. A firm can meet every one of them well and still find its structure was built for an earlier version of itself.</p>
         <p>Year-end reviews often look at the numbers: revenue, realization, and utilization. The structure that produced those numbers is rarely evaluated. This review gives you a way to see that structure clearly and to put a number on what it is costing your firm in partner time.</p>
@@ -373,7 +381,7 @@ input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;bac
       <div class="sec-head"><span class="eyebrow">What you get</span><h2>Three things to take into 2027.</h2></div>
       <div class="grid gets">
         <div class="card lead"><span class="n">01</span><h4>The billable time your structure costs</h4><p>An estimate of the partner hours lost this year to structural friction, where they go, and what they would have billed at your rates.</p></div>
-        <div class="card"><span class="n">02</span><h4>A clear read on your year</h4><p>Whether your firm's strain comes from growth, from friction between practice and operations, or both, and what is already working.</p></div>
+        <div class="card"><span class="n">02</span><h4>Where the pressure comes from</h4><p>Whether your firm's strain comes from growth, from friction between practice and operations, or both, and what is already working.</p></div>
         <div class="card"><span class="n">03</span><h4>A report for your next leadership discussion</h4><p>Your results, ready to print, with the question to open that conversation.</p></div>
       </div>
     </div>
@@ -468,14 +476,16 @@ var AREAS=[
   items:[{q:"How would I describe my understanding of the firm's direction?",l:"A general sense",r:"Specific priorities I could name"},
          {q:"What guided how I spent my time?",l:"My area's needs",r:"The firm's priorities"},
          {q:"How often did I explain the firm's priorities to the people in my area?",l:"Rarely",r:"Regularly"}],
-  text:{momentum:"The firm's priorities were clear to you, guided your time, and reached the people you lead. That gives every other change something to stand on. As "+NEXT+" planning adds new demands, protect it by deciding what comes off the list before anything goes on.",
+  short:{momentum:"The firm's priorities were clear and reached your daily work.",transition:"The firm's direction reaches some of your work more than the rest.",opportunity:"The firm worked from a general sense of direction, with each leader filling in the details."},billable:"Each priority left general sends partners back to the table, and those hours come out of billable time.",
+  text:{momentum:"The firm's priorities were clear to you, guided your time, and reached the people you lead. Every other change in the firm depends on that clarity. As "+NEXT+" planning adds new demands, decide what comes off the list before anything goes on.",
         transition:"The firm's direction is there, and it reaches some of your work more than the rest. Priorities that are clear at the leadership table can thin out on the way to daily decisions. A short list that every leader can name and explain in the same words tends to close that distance.",
-        opportunity:"Your answers suggest the firm worked from a general sense of direction this year, with each leader filling in the details for their own area. That is a natural stage for a firm that has grown faster than its planning habits. Shared priorities give every other improvement something to stand on, which makes this a strong place to begin."},
+        opportunity:"Your answers suggest the firm worked from a general sense of direction this year, with each leader filling in the details for their own area. That is a natural stage for a firm that has grown faster than its planning habits. Agreeing on a few shared priorities is a practical first step, because the other four areas depend on it."},
   ctx:{text:"About half of law firm professionals say their firm's AI strategy is invisible in their daily work.",src:"trLaw"}},
  {key:"decision-rights",name:"Decision Rights",desc:"Who decides, how fast, and whether authority matches responsibility.",
   items:[{q:"How was time spent in leadership team meetings?",l:"Reporting on each area",r:"Making decisions together"},
          {q:"When a new kind of problem came up, how was it decided?",l:"We had to work out who would decide",r:"It was clear who would decide"},
          {q:"How often did I need approval for decisions within my own responsibilities?",l:"Often",r:"Rarely"}],
+  short:{momentum:"Decisions had clear owners and moved quickly.",transition:"Most decisions found an owner, and some kinds are still worked out each time.",opportunity:"Decisions often waited for someone to claim them or for approvals."},billable:"Each decision without an owner pulls partners into settling it, and those hours come out of billable time.",
   text:{momentum:"Decisions in your firm had clear owners this year. New problems found their way to the right person, and you could act within your own responsibilities. Write down how that works while it is working, because growth and leadership changes can unsettle it.",
         transition:"Most decisions found an owner, and some kinds still have to be worked out each time. Naming an owner for the two or three that come up most often would return leader time every week.",
         opportunity:"Your answers point to decisions that waited for someone to claim them, or needed approvals that slowed the work. The cost shows up in leader hours and in opportunities that pass while the firm deliberates. Decision rights are part of the firm's design, and they can be redesigned."},
@@ -484,16 +494,18 @@ var AREAS=[
   items:[{q:"How well did I understand the pressures the other side of the firm faced?",note:"For practice leaders, the other side is operations. For operations leaders, it is the practices.",l:"Vaguely",r:"In detail"},
          {q:"How often did I work directly with leaders from the other side of the firm on a shared problem?",l:"A few times a year",r:"Most weeks"},
          {q:"How were new tools and processes adopted in my part of the firm?",l:"Ad hoc",r:"Systematically"}],
-  text:{momentum:"The two sides of your firm understood each other and worked on shared problems this year, and new tools reached your area in a consistent way. That connection lets a firm take on change without each group reinventing it. It is a real asset heading into "+NEXT+".",
+  short:{momentum:"The two sides of the firm understood each other and worked on shared problems.",transition:"Practice and operations connect on some things and run separately on others.",opportunity:"Practice and operations worked largely on parallel tracks."},billable:"Gaps between the two sides get closed by hand, often by a partner, and those hours come out of billable time.",
+  text:{momentum:"The two sides of your firm understood each other and worked on shared problems this year, and new tools reached your area in a consistent way. That connection lets the firm adopt a change across both sides at once, which will matter as "+NEXT+" brings new tools and pricing.",
         transition:"The practice and operations sides of your firm connect on some things and run separately on others. It shows when a new tool or process is adopted differently from one group to the next. Bringing both sides into the decisions that affect them both helps close that gap.",
-        opportunity:"Your answers suggest the practice and operations sides of your firm worked on parallel tracks this year. Each side is capable, and each is carrying the cost of a structure that keeps them apart. When the two sides decide together, new tools, pricing, and growth plans move faster."},
+        opportunity:"Your answers suggest the practice and operations sides of your firm worked on parallel tracks this year. Both sides are capable, and the structure keeps them apart. When the two sides decide together, new tools, pricing, and growth plans move faster."},
   ctx:{text:"Practice silos top the list of structural problems law firm COOs would fix first, at 38 percent.",src:"blick"}},
  {key:"leader-time",name:"Leader Time",desc:"Where partner and leader hours went.",
   items:[{q:"How often did waiting on a decision hold up my own work?",l:"Often",r:"Rarely"},
          {q:"How much of my week went to operational questions someone else could have handled?",l:"A large share",r:"Very little"},
          {q:"How much of my time went to planning for the firm's future?",note:"Such as setting strategy, developing business, or preparing others to lead.",l:"Very little",r:"A good share"}],
-  text:{momentum:"Your time this year went largely where it belonged. Decisions rarely held you up, operational questions found other owners, and you had room to build for the future. Guard that as demands rise, because a growing firm depends on that capacity in its leaders.",
-        transition:"Some of your time went to the firm's future, and some went to waiting on decisions or handling questions that belonged elsewhere. Both pulls are real in a growing firm.",
+  short:{momentum:"Your time went largely to clients and the firm's future.",transition:"Your time was split between the firm's future and questions that belonged elsewhere.",opportunity:"Much of your time went to waiting on decisions and questions others could own."},billable:"These hours are the core of your estimate.",
+  text:{momentum:"This year your time went mostly to clients and the firm's future. Decisions rarely held you up, operational questions found other owners, and you had room to build for the future. Guard that as demands rise, because a growing firm depends on that capacity in its leaders.",
+        transition:"Some of your time went to the firm's future, and some went to waiting on decisions or handling questions that belonged elsewhere.",
         transitionQ:" The estimate below shows what moving even part of that time would be worth.",
         opportunity:"Your answers suggest much of your time went to waiting on decisions and handling questions others could own, which left little room for clients or the firm's future. That is how a structure built for an earlier firm shows up in a leader's week.",
         opportunityQ:" The next section puts a number on it."},
@@ -502,23 +514,24 @@ var AREAS=[
   items:[{q:"How much did the work in my area depend on a few people going beyond their roles?",l:"Heavily",r:"Only in a crunch"},
          {q:"How much of my area's knowledge and client relationships rested with one or two people?",l:"Most of it",r:"It was widely shared"},
          {q:"As demands on my area changed this year, how did we keep up?",l:"More hours from the same people",r:"Changes in how the work was organized"}],
-  text:{momentum:"The structure in your area carries its work. When demands changed, the firm adjusted how work was organized, and it would hold up if someone central stepped away. That steadiness is worth having in place before growth or a leadership transition arrives.",
+  short:{momentum:"The structure carries the work and would hold if someone central stepped away.",transition:"Your area holds up and leans on a few people when pressure rises.",opportunity:"The work depends heavily on a few people going beyond their roles."},billable:"When a few people carry the work, partners fill the gaps, and those hours come out of billable time.",
+  text:{momentum:"The structure in your area carries its work. When demands changed, the firm adjusted how work was organized, and it would hold up if someone central stepped away. Keep it in place as the firm grows or a leader steps back.",
         transition:"Your area holds up well most of the time and leans on a few people when pressure rises. That gets a firm through a busy season. Over a longer stretch, it concentrates knowledge and effort in people the firm would struggle to replace, and that risk becomes real when someone steps away.",
         opportunity:"Your answers suggest the work in your area depends heavily on a few people going beyond their roles, and that longer hours were the main response to new demands. Those people carried the firm through this year. A structure that shares the load would protect them and the firm, especially if a key person steps away in "+NEXT+"."},
-  ctx:{text:"Manager engagement fell from 31 percent in 2022 to 22 percent in 2025, a sign of how much the middle of organizations is carrying.",src:"gallup"}}
+  ctx:{text:"Manager engagement fell from 31 percent in 2022 to 22 percent in 2025.",src:"gallup"}}
 ];
 var BAND={momentum:"Momentum",transition:"In transition",opportunity:"Opportunity"};
 var ROLES=[{k:"mp",t:"Managing partner or president"},{k:"practice",t:"Practice or department leader"},{k:"ops",t:"Operations leader (COO, Executive Director, Director of Operations, Firm Administrator)"},{k:"other",t:"Other leadership role"}];
 var SECTORS=[{k:"law",t:"Law"},{k:"accounting",t:"Accounting"},{k:"architecture",t:"Architecture"},{k:"engineering",t:"Engineering"},{k:"advisory",t:"Financial advisory"},{k:"other",t:"Other professional services"}];
 var SIZES=[{k:"u50",t:"Under 50"},{k:"50-150",t:"50 to 150"},{k:"151-300",t:"151 to 300"},{k:"o300",t:"Over 300"}];
 var AHEAD=[
- {k:"grow",t:"We expect to add people or take on significantly more work",p:"Growth tests whether the structure can carry more than it was built for. Before adding people, decide who will own the new decisions that come with them."},
- {k:"step",t:"A leader or senior administrator is retiring or stepping back",p:"A leader stepping back shows a firm how much of its operating model lived with one person. Planning early gives the firm time to design the role around where it is headed."},
- {k:"merge",t:"We may acquire another firm or merge with one",p:"A merger or ownership change brings two ways of deciding into one firm. Settling which decisions belong where before the transaction closes makes the integration easier."},
- {k:"acquired",t:"Our firm may be acquired or join a larger firm",p:"When a firm may be acquired, buyers look closely at whether its work runs on a clear structure or on a few key people. A structure that stands on its own strengthens the firm's position in that conversation and makes the transition easier for its people."},
- {k:"price",t:"How we price or deliver our work is changing, including through AI",p:"New pricing, new ways of delivering work, and AI all cross the line between practice and operations. They move fastest when one person clearly owns the decision and both sides help shape it."},
- {k:"soften",t:"We expect demand to soften",p:"A slower year can free leaders to work on the structure itself, so the firm is ready when work returns."},
- {k:"direction",t:"We are setting a new strategic direction or plan",p:"A new direction asks the whole firm to move together. Bringing practice and operations leaders into shaping it, and agreeing on a short list everyone can name, carries a plan from the leadership table into daily work."},
+ {k:"grow",t:"We expect to add people or take on significantly more work",s:"Before adding people, decide who will own the new decisions that come with them.",p:"Growth tests whether the structure can carry more than it was built for. Before adding people, decide who will own the new decisions that come with them."},
+ {k:"step",t:"A leader or senior administrator is retiring or stepping back",s:"Planning early gives the firm time to design the role around where it is headed.",p:"A leader stepping back shows a firm how much of its operating model lived with one person. Planning early gives the firm time to design the role around where it is headed."},
+ {k:"merge",t:"We may acquire another firm or merge with one",s:"Settling which decisions belong where before the deal closes makes the integration easier.",p:"A merger or ownership change brings two ways of deciding into one firm. Settling which decisions belong where before the transaction closes makes the integration easier."},
+ {k:"acquired",t:"Our firm may be acquired or join a larger firm",s:"Buyers look closely at whether a firm's work runs on a clear structure or on a few key people.",p:"When a firm may be acquired, buyers look closely at whether its work runs on a clear structure or on a few key people. A structure that stands on its own strengthens the firm's position in that conversation and makes the transition easier for its people."},
+ {k:"price",t:"How we price or deliver our work is changing, including through AI",s:"New pricing and AI move fastest when one person clearly owns the decision and both sides help shape it.",p:"New pricing, new ways of delivering work, and AI all cross the line between practice and operations. They move fastest when one person clearly owns the decision and both sides help shape it."},
+ {k:"soften",t:"We expect demand to soften",s:"A slower year can free leaders to work on the structure itself, so the firm is ready when work returns.",p:"A slower year can free leaders to work on the structure itself, so the firm is ready when work returns."},
+ {k:"direction",t:"We are setting a new strategic direction or plan",s:"Agreeing on a short list everyone can name carries a new plan from the leadership table into daily work.",p:"A new direction asks the whole firm to move together. Bringing practice and operations leaders into shaping it, and agreeing on a short list everyone can name, carries a plan from the leadership table into daily work."},
  {k:"none",t:"None of these",p:""}
 ];
 var SECTOR_CTX={
@@ -653,7 +666,7 @@ function renderStep(){
   if(s===17){
     var pw=partnerWord();
     $("q-label").textContent="Optional estimate";$("q-count").textContent="";
-    body.innerHTML='<div class="stack" style="gap:8px"><p class="qtext">Billable time lost to structure</p><p>Every firm spends '+pw+' time running itself. This estimate counts only the time lost to structural friction. It takes about 30 seconds, and you can skip it.</p></div>'+
+    body.innerHTML='<div class="stack" style="gap:8px"><p class="qtext">Billable time lost to structure</p><p>Every firm spends '+pw+' time running itself. This estimate turns your answers into '+pw+' hours and dollars, counting only the time lost to structural friction. It takes about 30 seconds, and you can skip it.</p></div>'+
       '<div class="panel-q"><span class="lbl" style="font-weight:700;color:var(--navy)">In a typical week, about how many hours does a '+pw+' at your firm lose to:</span>'+
       SOURCES_Q.map(function(o){return '<div class="qrow"><label for="'+o.k+'" style="font-size:15px">'+o.t+'</label><div><input type="range" id="'+o.k+'" min="0" max="10" step="0.5" value="'+state.q[o.k]+'"><div class="val" id="'+o.k+'-v"></div></div></div>';}).join("")+'</div>'+
       '<div class="panel-q"><label class="field" for="partners" style="max-width:280px">How many '+partnersWord()+' does the firm have?<input type="number" id="partners" min="1" max="500" inputmode="numeric" value="'+esc(state.q.partners)+'"></label>'+
@@ -725,52 +738,50 @@ function renderResults(){
   function ctx(c){return '<p class="ctx"><b>Across firms this year</b>'+c.text+cite(c.src)+'</p>';}
   var today=new Date().toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"});
   var READ={
-    momentum:"Your firm came through "+YEAR+" with its structure carrying much of the load, and "+strong+" stood out. That is worth protecting in a year that asked so much of firms. It also gives you room to choose your next move. "+lowName+" is where the firm has the most to gain in "+NEXT+".",
-    friction:"Your firm has real strengths to build on, led by "+strong+". Your answers point to friction between the practice and operations sides of the firm. Capable people on both sides are working around a structure that never fully settled who decides what. That is a design question, and design can change.",
-    growth:strong+" gave your firm a solid base this year. Your answers point to growth pressing on the structure. The firm has been taking on more work through the extra effort of a few people. A structure built for the firm you are becoming would carry more of that load, and return partner time to clients and the firm's future.",
-    both:"Your firm has momentum in "+strong+". Your answers also show growth pressing on capacity while the two sides of the firm work from different playbooks. Each pressure makes the other harder. Your firm likely succeeded its way into this position, and the next step is designing for the firm you have become."};
+    momentum:"Your firm's structure did much of the work this year, and "+strong+" was its strongest area. That leaves you free to choose where to invest next. "+lowName+" is where the firm has the most to gain in "+NEXT+".",
+    friction:strong+" is your firm's strongest area. Your answers point to friction between the practice and operations sides, with capable people on both sides working around unsettled questions about who decides what. Changes to governance and decision rights can reduce friction.",
+    growth:strong+" was your firm's strongest area this year. Your answers show growth pressing on the structure, with a few people's extra effort absorbing the new work. A structure built for the firm you are becoming would carry more of that load, and return partner time to clients and the firm's future.",
+    both:strong+" is your firm's strongest area. Your answers also show growth pressing on capacity while the two sides of the firm work from different playbooks, and each pressure makes the other harder. Your firm likely succeeded its way into this position, and the next step is designing for the firm you have become."};
   var PATNAME={momentum:"Momentum",growth:"Growth",friction:"Friction",both:"Growth and friction"};
   var h='';
   h+='<div class="rhead"><div><img src="'+LOGO+'" alt="High Peaks Group"><span class="eyebrow" style="color:#A9D4A5">'+YEAR+' year-end review</span><h1>How your firm\'s structure carried '+YEAR+'</h1></div><div class="who"><b>'+esc(L.name)+'</b>'+esc(L.org)+'<br>'+today+'</div></div>';
-  var booking=esc(bookLink(pat,Q,strong,lowName));
-  h+='<div class="panel brief"><span class="eyebrow">Your results in brief</span><div class="tiles">'+
+  var booking=esc(bookLink(pat,Q,strong,lowName)),pw=partnerWord();
+  var HEAD={momentum:"Your structure carried the year.",growth:"Growth is pressing on your structure.",friction:"Your answers point to friction between practice and operations.",both:"Growth and friction are arriving together."};
+  /* 1: in brief */
+  h+='<div class="panel brief"><span class="eyebrow">Your results in brief</span>';
+  if(Q){var biggest=Q.parts.slice().sort(function(x,y){return y.v-x.v;})[0];
+    h+='<div class="moneyblock"><span class="lbl">'+(isAE()?'Partner and principal time at stake':'Partner time at stake')+'</span>'+
+       '<p class="money">'+(Q.rate?money(Q.low)+' to '+money(Q.high)+' a year':'About '+roundHours(Q.hours).toLocaleString("en-US")+' hours a year')+'</p>'+
+       '<p>'+(Q.rate?'This is the billable '+pw+' time':'These are the '+pw+' hours')+' a structure built for where your firm is headed could return, based on '+Q.h+' hours a week across '+Q.p+' '+partnersWord()+'. '+biggest.o.short+' accounts for the largest share.</p>'+
+       '<div class="stackbar" role="img" aria-label="Share of lost hours by source">'+Q.parts.map(function(x){return x.v>0?'<i style="width:'+(x.v/Q.h*100)+'%;background:'+x.o.c+'"></i>':'';}).join("")+'</div>'+
+       '<div class="legend">'+Q.parts.filter(function(x){return x.v>0;}).map(function(x){return '<span><i style="background:'+x.o.c+'"></i>'+x.o.short+': '+x.v+' hr a week</span>';}).join("")+'</div>'+
+       '<p class="calc">'+Q.h+' hours a week × '+Q.p+' '+partnersWord()+' × '+WEEKS+' working weeks'+(Q.rate?' × $'+Q.rate+', the bottom of your rate band. The lower figure assumes half of those hours could move to someone else.':'. Add a rate band to see the billable value.')+'</p></div>';}
+  h+='<div class="readout"><h2>'+HEAD[pat.k]+'</h2><p>'+READ[pat.k]+'</p></div>';
+  h+='<div class="tiles">'+
      '<div class="tile strong"><span class="lbl">Your strongest area</span><b>'+strong+'</b><p>The base to build on in '+NEXT+'.</p></div>'+
-     '<div class="tile start"><span class="lbl">Where to start</span><b>'+lowName+'</b><p>The area with the most room to grow.</p></div>'+
-     (Q?'<div class="tile"><span class="lbl">Partner time at stake</span><b>'+(Q.rate?money(Q.low)+' to '+money(Q.high):'About '+roundHours(Q.hours).toLocaleString("en-US")+' hours')+'</b><p>'+(Q.rate?'A year, in billable time lost to structure.':'A year, lost to structure.')+'</p></div>':'')+
-     '</div><div class="next"><p>The detail for each area follows. When you are ready, the next step is a 30-minute conversation about your results.</p><a class="btn btn-sage" href="'+booking+'" target="_blank" rel="noopener">Book a 30-minute conversation</a></div></div>';
-  /* 1 */
-  h+='<div class="panel"><span class="eyebrow">Your year at a glance</span><div class="pattern"><div class="stack" style="gap:12px"><h2>'+(pat.k==="momentum"?"Your structure carried the year.":pat.k==="growth"?"Growth is pressing on your structure.":pat.k==="friction"?"Your answers point to friction between practice and operations.":"Growth and friction are arriving together.")+'</h2><p>'+READ[pat.k]+'</p></div>'+
-     '<div class="patmap" aria-label="Pattern">'+["momentum","growth","friction","both"].map(function(k){return '<div class="pm'+(k===pat.k?' on':'')+'"><i></i>'+PATNAME[k]+'</div>';}).join("")+'</div></div>'+'</div>';
-  /* 2 */
+     '<div class="tile start"><span class="lbl">Where to start</span><b>'+lowName+'</b><p>The area with the most room to grow.</p></div></div>'+
+     '<div class="next"><p>When you are ready, the next step is a 30-minute conversation about '+(Q?'recovering that time':'your results')+'.</p><a class="btn btn-sage" href="'+booking+'" target="_blank" rel="noopener">Book a 30-minute conversation</a></div></div>';
+  /* 2: five areas */
+  function full(i,label){var a=AREAS[i],b=band(sc[i]);
+    return '<div class="area"><div class="hd"><span class="lbl">'+label+'</span><h3>'+a.name+'</h3><span class="chip '+b+'">'+BAND[b]+'</span></div><p>'+a.text[b]+(Q?' '+a.billable:'')+'</p>'+ctx(a.ctx)+'</div>';}
   h+='<div class="panel"><span class="eyebrow">The five areas</span>'+
      '<div class="scale" aria-hidden="true"><span></span><div class="ends"><span>Built for an earlier firm</span><span>Built for where you\'re headed</span></div><span></span></div>'+
      AREAS.map(function(a,i){var b=band(sc[i]);return '<div class="track-row"><span class="nm">'+a.name+'</span><div class="ptrack" role="img" aria-label="'+a.name+': '+BAND[b]+'"><span class="mk '+b+'" style="left:'+Math.min(97,Math.max(3,sc[i]))+'%"></span></div><span class="chip '+b+'">'+BAND[b]+'</span></div>';}).join("")+
-     AREAS.map(function(a,i){var b=band(sc[i]),t=a.text[b];if(a.key==="leader-time"&&Q){if(b==="transition")t+=a.text.transitionQ;if(b==="opportunity")t+=a.text.opportunityQ;}
-       return '<div class="area"><div class="hd"><h3>'+a.name+'</h3><span class="chip '+b+'">'+BAND[b]+'</span></div><p>'+t+'</p>'+ctx(a.ctx)+'</div>';}).join("")+'</div>';
-  /* 3 */
-  if(Q){var pw=partnerWord(),biggest=Q.parts.slice().sort(function(x,y){return y.v-x.v;})[0];
-    h+='<div class="panel"><span class="eyebrow">'+(isAE()?"Partner and principal time":"Partner time")+'</span>';
-    h+='<p class="money">'+(Q.rate?'About '+money(Q.low)+' to '+money(Q.high)+' a year in '+pw+' billable time lost to structure':'About '+roundHours(Q.hours).toLocaleString("en-US")+' '+pw+' hours a year lost to structure')+'</p>';
-    h+='<p>Every firm spends '+pw+' time running itself, and much of that time is well spent. Your estimate counts only the hours lost to structural friction, from decisions that wait to matters that land on '+partnersWord()+' by default and work routed around the gap between practice and operations.'+(Q.rate?' At your firm\'s '+pw+' rates, those hours could have billed roughly '+money(Q.low)+' to '+money(Q.high)+'.':'')+' '+biggest.o.short+' accounts for the biggest share, which makes it the place to start.</p>';
-    h+='<div class="stackbar" role="img" aria-label="Share of lost hours by source">'+Q.parts.map(function(x){return x.v>0?'<i style="width:'+(x.v/Q.h*100)+'%;background:'+x.o.c+'"></i>':'';}).join("")+'</div>';
-    h+='<div class="legend">'+Q.parts.filter(function(x){return x.v>0;}).map(function(x){return '<span><i style="background:'+x.o.c+'"></i>'+x.o.short+': '+x.v+' hr a week</span>';}).join("")+'</div>';
-    h+='<p class="calc"><b>How we calculated this:</b> '+Q.h+' hours a week × '+Q.p+' '+partnersWord()+' × '+WEEKS+' working weeks'+(Q.rate?' × $'+Q.rate+', the bottom of your rate band. The lower figure assumes half of those hours could move to someone else.':', about '+roundHours(Q.hours).toLocaleString("en-US")+' hours a year. Add a rate band to see the billable value.')+'</p>';
-    h+=ctx({text:"Job openings in professional and business services are rising while the hiring rate falls, which pushes unfilled work onto partners and managers.",src:"joltsSep"})+'</div>';}
-  /* 4 */
+     full(pat.low,"Where to start")+full(pat.high,"Your strongest area")+
+     '<div class="others">'+AREAS.map(function(a,i){if(i===pat.low||i===pat.high)return '';var b=band(sc[i]);return '<p><b>'+a.name+'.</b> '+a.short[b]+'</p>';}).join("")+'</div></div>';
+  /* 3: looking ahead */
   var capBand=band(sc[4]);
   var items=state.ahead.indexOf("none")>=0?[]:AHEAD.filter(function(o){return state.ahead.indexOf(o.k)>=0;});
   h+='<div class="panel"><span class="eyebrow">Looking at '+NEXT+'</span>';
-  if(items.length){h+='<p>You named these as part of the year ahead for your firm.</p><div class="ahead">'+items.map(function(o){var p=o.p;if(o.k==="step"&&capBand!=="momentum")p+=" Your Capacity answers suggest this is worth starting soon.";return '<div class="it"><b>'+o.t+'</b><p>'+p+'</p></div>';}).join("")+'</div>';}
-  else h+='<p>Your firm expects a steady year. That makes '+NEXT+' a good time to strengthen '+lowName+' on your own schedule, before a change in the market or the leadership team sets the timetable for you.</p>';
-  h+=ctx(SECTOR_CTX[state.profile.sector]||SECTOR_CTX.other)+'</div>';
-  /* 5 */
-  h+='<div class="question"><div><span class="eyebrow">A question to take forward</span><p class="q">'+(QUESTIONS[state.profile.role]||QUESTIONS.other)+'</p><p>Bring it to your next leadership meeting, or to a conversation with us.</p></div></div>';
-  var stakes=Q?(Q.rate?' Your estimate puts the partner time at stake at '+money(Q.low)+' to '+money(Q.high)+' a year.':' Your estimate puts the partner time at stake at about '+roundHours(Q.hours).toLocaleString("en-US")+' hours a year.'):'';
+  if(items.length){h+='<div class="ahead">'+items.map(function(o){var p=o.s;if(o.k==="step"&&capBand!=="momentum")p+=" Your Capacity answers suggest starting soon.";return '<div class="it"><b>'+o.t+'</b><p>'+p+'</p></div>';}).join("")+'</div>';}
+  else h+='<p>Your firm expects a steady year. That makes '+NEXT+' a good time to strengthen '+lowName+' on your own schedule.</p>';
+  h+='</div>';
+  /* 4: how we can help */
   h+='<div class="panel help"><span class="eyebrow">How we can help</span><h2>Working with High Peaks Group starts with a conversation.</h2>'+
-     '<p class="lead">Thirty minutes with a senior High Peaks Group advisor. Bring this report, and we will walk through it together, starting with '+lowName+'. You leave knowing whether it is worth acting on now and what that would involve.</p>'+
+     '<p class="lead">You meet for thirty minutes with a senior High Peaks Group advisor. Bring this report, and we will walk through '+(Q?'how much of that '+pw+' time your firm could recover':'it together')+', starting with '+lowName+'. You leave knowing whether it is worth acting on now and what that would involve.</p>'+
      '<div class="help-cta"><a class="btn btn-sage" href="'+booking+'" target="_blank" rel="noopener">Book a 30-minute conversation</a><span class="printurl" hidden>Book at highpeaksgroup.com/book</span></div>'+
-     '<div class="how"><span class="eyebrow">If you decide to go further</span><p>You receive a short written proposal with a fixed fee within a week. The work itself is a six-week Firm Evaluation. We talk with leaders on both sides of the firm and end with a read-out to your leadership team and a written report your firm owns. Senior advisors lead it from start to finish, and you decide what to do with the findings, on your own or with us.</p></div></div>';
-  h+='<p class="small muted">Leading a team through this? Ask each member to take the review and bring their printed results to your next leadership meeting.</p>';
+     '<div class="grid g2 closers"><div class="how"><span class="eyebrow">For your leadership team</span><p><b>'+(QUESTIONS[state.profile.role]||QUESTIONS.other)+'</b> Ask each leader to take the review, then bring the question and your printed results to your next meeting.</p></div>'+
+     '<div class="how"><span class="eyebrow">If you decide to go further</span><p>You receive a short written proposal with a fixed fee within a week. The work is a six-week Firm Evaluation that ends with a read-out to your leadership team and a written report your firm owns. Senior advisors lead it from start to finish.</p></div></div></div>';
   h+='<div class="srcs"><span class="eyebrow noline" style="font-size:10px">Sources</span><ol>'+notes.map(function(k){return '<li>'+SRC[k].t+' <a href="'+SRC[k].u+'" target="_blank" rel="noopener">'+SRC[k].u.replace(/^https?:\/\//,"").split("/")[0]+'</a></li>';}).join("")+'</ol><span>This review reflects one person\'s answers on '+today+'. Figures from outside surveys describe the wider market as context for your results.</span></div>';
   $("report").innerHTML=h;
   if(!state.sent&&state.lead){state.sent=true;save();
